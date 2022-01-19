@@ -17,7 +17,7 @@ Clean SwiftUI architecture 학습이 주된 목적이고, SwiftUI에 익숙해�
 - [Clean SwiftUI Sample Project 분석 Notion](https://lucky-sleet-a6d.notion.site/Clean-SwiftUI-Project-d7740078874c43d6b08c40a2f3498234)
 
 ### minimum target
-- 13.0: SwiftUI가 아직 발전 단계이고, 13.0은 SwiftUI가 처음 나왔을 떄의 버전이기 떄문에 버그도 많고 문제가 많다는 의견들이 많았으나 이런 문제점들을 겪으면서 나아가야 성장에 도움이 될 것이라고 판단하여 13.0을 minimum target으로 설정하게 되었다.
+- `13.0`: SwiftUI가 아직 발전 단계이고, 13.0은 SwiftUI가 처음 나왔을 떄의 버전이기 떄문에 버그도 많고 문제가 많다는 의견들이 많았으나 이런 문제점들을 겪으면서 나아가야 성장에 도움이 될 것이라고 판단하여 13.0을 minimum target으로 설정하게 되었다.
 - 추후에 버전을 올릴 순 있겠지만, 적어도 첫 배포까진 13.0을 유지할 생각이다.
 
 ### 기능 목록과 이슈 처리
