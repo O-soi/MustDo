@@ -23,3 +23,5 @@
             - 외부에서 주입받아서 처리되는 동작이 잘 이해가 가질 않았는데 Binding을 정리하고 나서 비로소 이해할 수 있었다.
             - state property를 주입받아서 API Call한 결과 값을 주입받은 state property에 설정해준다. 전반적인 Interactor 방식을 이해한 것 같다.
 ### FELIX
+- 2022.01.20
+    - @State / @ObservableObject 학습
