@@ -25,3 +25,5 @@
 ### FELIX
 - 2022.01.20
     - @State / @ObservableObject 학습
+- 2022.01.22
+    - @Binding / EnvironmentObject 학습
