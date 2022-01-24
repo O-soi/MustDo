@@ -27,3 +27,5 @@
     - @State / @ObservableObject 학습
 - 2022.01.22
     - @Binding / EnvironmentObject 학습
+- 2022.01.24
+    - WWDC2019 SwiftUI Essential 학습
