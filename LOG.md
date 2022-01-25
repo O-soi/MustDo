@@ -22,6 +22,11 @@
         - LoadableSubject 학습
             - 외부에서 주입받아서 처리되는 동작이 잘 이해가 가질 않았는데 Binding을 정리하고 나서 비로소 이해할 수 있었다.
             - state property를 주입받아서 API Call한 결과 값을 주입받은 state property에 설정해준다. 전반적인 Interactor 방식을 이해한 것 같다.
+- 2022.01.25
+    - property wrapper들의 명확한 쓰임새 학습
+    - Clean SwiftUI 기반으로 가지만, 꼭 샘플 프로젝트를 따라갈 필요성은 없다고 생각함.
+    - target을 15.0으로 바꿀 예정
+    
 ### FELIX
 - 2022.01.20
     - @State / @ObservableObject 학습
