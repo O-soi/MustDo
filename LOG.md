@@ -29,3 +29,7 @@
     - @Binding / EnvironmentObject 학습
 - 2022.01.24
     - WWDC2019 SwiftUI Essential 학습
+- 2022.01.25
+    - 복잡한 구조의 데이터를 @State로 사용하면 안되는 이유 학습
+    - Nested ObservableObject를 사용하면 안되는 이유 학습
+    - WWDC2020 App essentials in SwiftUI 학습
