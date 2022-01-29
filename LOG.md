@@ -42,3 +42,5 @@
     - WWDC2020 App essentials in SwiftUI 학습
 - 2022.01.26
     - WWDC2020 Introduction to SwiftUI 학습중..
+- 2022.01.29
+    - WWDC2020 Intoduction to SwiftUI 학습
