@@ -46,3 +46,5 @@
     - WWDC2020 Intoduction to SwiftUI 학습
 - 2020.01.30
     - WWDC2020 Demystify SwiftUI 학습 및 정리
+- 2020.01.31
+    - WWDC2021 Discover concurrency in SwiftUI 학습 및 정리
