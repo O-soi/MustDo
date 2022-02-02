@@ -28,6 +28,9 @@
     - target을 15.0으로 바꿀 예정
 - 2022.01.26, 27
     - 야근, 모릴 이슈~ 
+- 2022.02.02
+    - AsyncIteratorProtocol 번역 및 학습
+    - AsyncThrowingStream 번역 및 학습
     
 ### FELIX
 - 2022.01.20
