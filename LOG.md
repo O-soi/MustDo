@@ -51,3 +51,7 @@
     - WWDC2020 Demystify SwiftUI 학습 및 정리
 - 2020.01.31
     - WWDC2021 Discover concurrency in SwiftUI 학습 및 정리
+- 2022.02.01
+    - WWDC2021 Protect mutable state with swift Actors 학습 및 정리
+- 2022.02.02
+    - actors proposal 학습 및 정리중...
