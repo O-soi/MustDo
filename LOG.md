@@ -31,6 +31,9 @@
 - 2022.02.02
     - AsyncIteratorProtocol 번역 및 학습
     - AsyncThrowingStream 번역 및 학습
+- 2022.02.03
+    - Protect mutable state with Swift actors 기존에 정리해놨던 내용 복습
+    - async block, asyncDetached block, Sendable 공식문서 학습이 필요함
     
 ### FELIX
 - 2022.01.20
