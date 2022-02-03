@@ -3,7 +3,7 @@
 
 ## 참여자
 - Developer
-    - [Beomkey](https://github.com/NamKiBeom)
+    - [Beomkey](https://github.com/beomkey-nkb)
     - [felix-mr](https://github.com/felix-mr)
 - Reviewer
     - [SeokBA](https://github.com/SeokBA)
