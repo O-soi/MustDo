@@ -58,3 +58,5 @@
     - WWDC2021 Protect mutable state with swift Actors 학습 및 정리
 - 2022.02.02
     - actors proposal 학습 및 정리중...
+- 2020.02.04
+    - AsyncStream / AsyncThrowingStream 학습중..
