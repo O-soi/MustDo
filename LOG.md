@@ -34,6 +34,10 @@
 - 2022.02.03
     - Protect mutable state with Swift actors 기존에 정리해놨던 내용 복습
     - async block, asyncDetached block, Sendable 공식문서 학습이 필요함
+- 2022.02.04
+    - 야근 이슈
+- 2022.02.05
+    - Swift 5.5 Concurrney 학습
     
 ### FELIX
 - 2022.01.20
