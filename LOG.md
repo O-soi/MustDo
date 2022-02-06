@@ -64,3 +64,5 @@
     - actors proposal 학습 및 정리중...
 - 2020.02.04
     - AsyncStream / AsyncThrowingStream 학습중..
+- 2022.02.06
+    - Combine async / sequence 학습 및 정리
