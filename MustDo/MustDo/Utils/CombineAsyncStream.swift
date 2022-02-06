@@ -56,9 +56,17 @@ extension CombineAsyncStream: AsyncIteratorProtocol {
         return try await iterator.next()
     }
     
-    func singleValue() async throws -> Upstream.Output? {
+    func pickFirst(_ count: Int = 1) async throws -> Upstream.Output? {
+        guard count > -1
+        else { fatalError() }
+        
+        for _ in 0..<count-1 {
+            let _ = try await iterator.next()
+        }
+        
         let value = try await iterator.next()
-        self.cancel()
+        cancel()
+
         return value
     }
 }
