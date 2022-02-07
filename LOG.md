@@ -40,6 +40,8 @@
     - Swift 5.5 Concurrney 학습
 - 2022.02.06
     - PR 리뷰 반영 <- asyncStream 관련 실험과 논의
+- 2022.02.07
+    - What's new in SwiftUI (2020) 학습
     
 ### FELIX
 - 2022.01.20
