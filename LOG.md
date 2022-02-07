@@ -68,3 +68,5 @@
     - AsyncStream / AsyncThrowingStream 학습중..
 - 2022.02.06
     - Combine async / sequence 학습 및 정리
+- 2022.02.07
+    - The Swift Programming Language Concurrency 학습중.. 
