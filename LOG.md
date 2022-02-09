@@ -74,3 +74,5 @@
     - The Swift Programming Language Concurrency 학습중.. 
 - 2022.02.08
     - Structured Concurrency in Swift 학습중..
+- 2022.02.09
+    - Structured Concurrency in Swift 계속 학습중..
