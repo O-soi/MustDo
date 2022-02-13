@@ -90,3 +90,6 @@
     - Structured Concurrency in Swift 계속 학습중..
 - 2022.02.10
     - Structured Concurrency in Swift 계속 학습중..
+- 2022.02.12
+    - Structured Concurrency in Swift 계속 학습중..
+    - async-let과 GroupTask를 비교할 때 cancel과 관련되어 차이점이 잘 이해가 안가는 부분이 있음.
