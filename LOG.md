@@ -49,6 +49,11 @@
 - 2022.02.10
     - 9 to 9 야근(중간에 치과 30분)
     - 내일이랑 주말에 SwiftUI wwdc 볼 예정... 
+- 2022.02.12
+    - App essentials in SwiftUI 학습 및 정리
+    - Visually edit SwiftUI views 학습 <- 생각보다 별 내용이 없음.
+    - Build a SwiftUI view in Swift Playgrounds 학습 <- 플레이그라운드에서 SwiftUI 빌드하는 방법. 아이패드에서 써볼까하고 시청함
+    - Stack, Grids, and Outlines in SwiftUI 학습 및 정리
     
 ### FELIX
 - 2022.01.20
