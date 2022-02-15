@@ -56,6 +56,8 @@
     - Stack, Grids, and Outlines in SwiftUI 학습 및 정리
 - 2022.02.14
     - Data Essentials in SwiftUI 학습
+- 2022.02.15
+    - Data Essentials in SwiftUI 학습 <- 분량 너무 많음.
     
 ### FELIX
 - 2022.01.20
