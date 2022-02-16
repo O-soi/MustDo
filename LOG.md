@@ -58,6 +58,12 @@
     - Data Essentials in SwiftUI 학습
 - 2022.02.15
     - Data Essentials in SwiftUI 학습 <- 분량 너무 많음.
+- 2022.02.16
+    - The Composable Architecture 학습
+        - 혹시나 하는 마음에 학습했으나 버전을 높였는데 적용할 필요는 없어보인다. 
+        - property wrapper를 거의 활용하지 않고, 모든 동작처리를 switch case로 처리해서 그런지 거부감이 좀 있음.
+        - reducer로 뷰의 모든 동작을 제어하지만, 프로젝트가 커지면 메시브해질 것으로 예상
+        - mvvm을 composable하게 관리하는게 더 좋지 않을까라는 생각이 든다.
     
 ### FELIX
 - 2022.01.20
