@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            let baseView = AppContentView()
+            let baseView = MainTabView()
             window.rootViewController = UIHostingController(rootView: baseView)
             self.window = window
             window.makeKeyAndVisible()
