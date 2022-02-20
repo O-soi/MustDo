@@ -44,8 +44,8 @@
 		C138A3D127C1EE6A00E72130 /* MainTabView */ = {
 			isa = PBXGroup;
 			children = (
-				C138A3D727C1F0C700E72130 /* SettingView */,
 				C138A3D427C1F0B200E72130 /* MustDoView */,
+				C138A3D727C1F0C700E72130 /* SettingView */,
 				C138A3D227C1EE8700E72130 /* MainTabView.swift */,
 			);
 			path = MainTabView;
