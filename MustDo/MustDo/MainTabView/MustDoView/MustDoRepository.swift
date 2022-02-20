@@ -18,7 +18,18 @@ class MustDoRepository: MustDoRepositoryProtocol {
 //    let local: LocalDB
     
     func requestMustDoList(userID: Int) -> AnyPublisher<[MustDo], Never> {
-        return Just([dummyMustDo])
+        let dummyArray = Array.init(repeating: 0, count: 15)
+            .map { _ in
+                MustDo(
+                    title: "개발하기",
+                    description: "없음",
+                    repeatTypes: [.monday],
+                    elapsedSeconds: Int.random(in: 3600...7200),
+                    performedSeconds: Int.random(in: 0...3600)
+                )
+            }
+        
+        return Just(dummyArray)
             .eraseToAnyPublisher()
     }
     
