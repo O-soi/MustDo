@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct MustDo {
+struct MustDo: Identifiable {
+    let id = UUID()
     let title: String
     let description: String
-    let gauge: Double
     let repeatTypes: [MustDoRepeatType]
     let elapsedSeconds: Int
     let performedSeconds: Int
+    
+    var gauge: Double {
+        return Double(performedSeconds) / Double(elapsedSeconds)
+    }
 }
 
 enum MustDoRepeatType {
@@ -29,7 +33,6 @@ enum MustDoRepeatType {
 let dummyMustDo: MustDo = MustDo(
     title: "개발하기",
     description: "없음",
-    gauge: 71.5,
     repeatTypes: [.monday],
     elapsedSeconds: 7200,
     performedSeconds: 3600
