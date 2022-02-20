@@ -26,7 +26,7 @@ enum MustDoRepeatType {
     case sunday
 }
 
-static var dummyMustDo: MustDo = MustDo(
+let dummyMustDo: MustDo = MustDo(
     title: "개발하기",
     description: "없음",
     gauge: 71.5,
