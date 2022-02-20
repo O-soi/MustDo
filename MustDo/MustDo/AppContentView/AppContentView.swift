@@ -1,20 +1,20 @@
 //
-//  MustDoDetailView.swift
+//  AppContentView.swift
 //  MustDo
 //
-//  Created by 남기범 on 2021/12/28.
+//  Created by 남기범 on 2022/02/20.
 //
 
 import SwiftUI
 
-struct MustDoDetailView: View {
+struct AppContentView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct MustDoDetailView_Previews: PreviewProvider {
+struct AppContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MustDoDetailView()
+        AppContentView()
     }
 }
