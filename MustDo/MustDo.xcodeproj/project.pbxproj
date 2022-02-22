@@ -21,6 +21,7 @@
 		C1B467642770BDA200F0B282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B467632770BDA200F0B282 /* Assets.xcassets */; };
 		C1B467672770BDA200F0B282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B467652770BDA200F0B282 /* LaunchScreen.storyboard */; };
 		C1B867A027AC0EA1008283BB /* CombineAsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8679F27AC0EA1008283BB /* CombineAsyncStream.swift */; };
+		C1C31F1F27C522C00050FC66 /* CirecleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31F1E27C522C00050FC66 /* CirecleTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C1B467662770BDA200F0B282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B467682770BDA200F0B282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B8679F27AC0EA1008283BB /* CombineAsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAsyncStream.swift; sourceTree = "<group>"; };
+		C1C31F1E27C522C00050FC66 /* CirecleTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirecleTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		C138A3D427C1F0B200E72130 /* MustDoView */ = {
 			isa = PBXGroup;
 			children = (
+				C1C31F1D27C522A90050FC66 /* CircleTimerView */,
 				C138A3E127C2019800E72130 /* View */,
 				C138A3E027C2018A00E72130 /* Data */,
 				C138A3DA27C1F73800E72130 /* MustDoViewModel.swift */,
@@ -147,6 +150,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C1C31F1D27C522A90050FC66 /* CircleTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				C1C31F1E27C522C00050FC66 /* CirecleTimerView.swift */,
+			);
+			path = CircleTimerView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +231,7 @@
 				C1B4675B2770BDA100F0B282 /* AppDelegate.swift in Sources */,
 				C138A3E327C201AA00E72130 /* MustDo.swift in Sources */,
 				C138A3D627C1F0C100E72130 /* MustDoView.swift in Sources */,
+				C1C31F1F27C522C00050FC66 /* CirecleTimerView.swift in Sources */,
 				C1B867A027AC0EA1008283BB /* CombineAsyncStream.swift in Sources */,
 				C138A3DD27C1F7F000E72130 /* MustDoUsecase.swift in Sources */,
 				C138A3E927C2137800E72130 /* MustDoCell.swift in Sources */,
