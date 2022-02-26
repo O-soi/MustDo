@@ -76,6 +76,8 @@
     - NavigationView 연결
     - 연결하고 나서 데이터를 제어할려고 생각해보니 published로 선언된 배열안에 있는 struct들은 과연 source of truth인가에 대해 생각해봄.
     - 이 부분에 대한 정확한 확인이 필요.
+- 2022.02.26
+    - firebase 학습 - remote database, 회원 가입을 위해 필요
     
 ### FELIX
 - 2022.01.20
