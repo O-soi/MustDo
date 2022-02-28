@@ -1,0 +1,20 @@
+name: Swift
+
+on:
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Pod Install
+      run: |
+        pod install --repo-update --clean-install --project-directory=MustDo/ 
+      
+    - name: MustDo Unit Test
+      run: |
+        xcodebuild clean test -workspace MustDo/MustDo.xcworkspace -scheme MustDo -destination 'platform=iOS Simulator,name=iPhone 12 pro,OS=latest'
