@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D68F381A755ADA4C1165D95 /* Pods_MustDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2703C9BEFD95D27B490BED /* Pods_MustDo.framework */; };
+		C101A1F027CCDF9700054274 /* MustDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101A1EF27CCDF9700054274 /* MustDoTests.swift */; };
+		C101A1F727CCE0E500054274 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C101A1F627CCE0E500054274 /* GoogleService-Info.plist */; };
 		C138A3D327C1EE8700E72130 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D227C1EE8700E72130 /* MainTabView.swift */; };
 		C138A3D627C1F0C100E72130 /* MustDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D527C1F0C100E72130 /* MustDoView.swift */; };
 		C138A3D927C1F0D400E72130 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D827C1F0D400E72130 /* SettingView.swift */; };
@@ -22,13 +24,25 @@
 		C1B467642770BDA200F0B282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B467632770BDA200F0B282 /* Assets.xcassets */; };
 		C1B467672770BDA200F0B282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B467652770BDA200F0B282 /* LaunchScreen.storyboard */; };
 		C1B867A027AC0EA1008283BB /* CombineAsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8679F27AC0EA1008283BB /* CombineAsyncStream.swift */; };
-		C1C2CC7B27CA694D0027A3D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1C2CC7A27CA694D0027A3D5 /* GoogleService-Info.plist */; };
 		C1C31F1F27C522C00050FC66 /* CirecleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C31F1E27C522C00050FC66 /* CirecleTimerView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C101A1F127CCDF9700054274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B4674F2770BDA100F0B282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1B467562770BDA100F0B282;
+			remoteInfo = MustDo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8E2703C9BEFD95D27B490BED /* Pods_MustDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MustDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32B5B24C210AA841E6C8F7F /* Pods-MustDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustDo.debug.xcconfig"; path = "Target Support Files/Pods-MustDo/Pods-MustDo.debug.xcconfig"; sourceTree = "<group>"; };
+		C101A1ED27CCDF9700054274 /* MustDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C101A1EF27CCDF9700054274 /* MustDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTests.swift; sourceTree = "<group>"; };
+		C101A1F627CCE0E500054274 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C138A3D227C1EE8700E72130 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C138A3D527C1F0C100E72130 /* MustDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoView.swift; sourceTree = "<group>"; };
 		C138A3D827C1F0D400E72130 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -45,12 +59,18 @@
 		C1B467662770BDA200F0B282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B467682770BDA200F0B282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B8679F27AC0EA1008283BB /* CombineAsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAsyncStream.swift; sourceTree = "<group>"; };
-		C1C2CC7A27CA694D0027A3D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1C31F1E27C522C00050FC66 /* CirecleTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirecleTimerView.swift; sourceTree = "<group>"; };
 		EF39DC45EB22F9D1BD9F72E4 /* Pods-MustDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MustDo.release.xcconfig"; path = "Target Support Files/Pods-MustDo/Pods-MustDo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C101A1EA27CCDF9700054274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B467542770BDA100F0B282 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +89,14 @@
 				EF39DC45EB22F9D1BD9F72E4 /* Pods-MustDo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C101A1EE27CCDF9700054274 /* MustDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C101A1EF27CCDF9700054274 /* MustDoTests.swift */,
+			);
+			path = MustDoTests;
 			sourceTree = "<group>";
 		};
 		C138A3D127C1EE6A00E72130 /* MainTabView */ = {
@@ -132,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B467592770BDA100F0B282 /* MustDo */,
+				C101A1EE27CCDF9700054274 /* MustDoTests */,
 				C1B467582770BDA100F0B282 /* Products */,
 				2F1938E36A1D7CDCD1674E3C /* Pods */,
 				E84E0684EBF043D659ACE175 /* Frameworks */,
@@ -142,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B467572770BDA100F0B282 /* MustDo.app */,
+				C101A1ED27CCDF9700054274 /* MustDoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,7 +185,7 @@
 				C1B467632770BDA200F0B282 /* Assets.xcassets */,
 				C1B467652770BDA200F0B282 /* LaunchScreen.storyboard */,
 				C1B467682770BDA200F0B282 /* Info.plist */,
-				C1C2CC7A27CA694D0027A3D5 /* GoogleService-Info.plist */,
+				C101A1F627CCE0E500054274 /* GoogleService-Info.plist */,
 			);
 			path = MustDo;
 			sourceTree = "<group>";
@@ -188,6 +218,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C101A1EC27CCDF9700054274 /* MustDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C101A1F527CCDF9700054274 /* Build configuration list for PBXNativeTarget "MustDoTests" */;
+			buildPhases = (
+				C101A1E927CCDF9700054274 /* Sources */,
+				C101A1EA27CCDF9700054274 /* Frameworks */,
+				C101A1EB27CCDF9700054274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C101A1F227CCDF9700054274 /* PBXTargetDependency */,
+			);
+			name = MustDoTests;
+			productName = MustDoTests;
+			productReference = C101A1ED27CCDF9700054274 /* MustDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C1B467562770BDA100F0B282 /* MustDo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1B4676B2770BDA200F0B282 /* Build configuration list for PBXNativeTarget "MustDo" */;
@@ -217,6 +265,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					C101A1EC27CCDF9700054274 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C1B467562770BDA100F0B282;
+					};
 					C1B467562770BDA100F0B282 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -236,18 +288,26 @@
 			projectRoot = "";
 			targets = (
 				C1B467562770BDA100F0B282 /* MustDo */,
+				C101A1EC27CCDF9700054274 /* MustDoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C101A1EB27CCDF9700054274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B467552770BDA100F0B282 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C1B467672770BDA200F0B282 /* LaunchScreen.storyboard in Resources */,
+				C101A1F727CCE0E500054274 /* GoogleService-Info.plist in Resources */,
 				C1B467642770BDA200F0B282 /* Assets.xcassets in Resources */,
-				C1C2CC7B27CA694D0027A3D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +356,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C101A1E927CCDF9700054274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C101A1F027CCDF9700054274 /* MustDoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B467532770BDA100F0B282 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +386,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C101A1F227CCDF9700054274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1B467562770BDA100F0B282 /* MustDo */;
+			targetProxy = C101A1F127CCDF9700054274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C1B467652770BDA200F0B282 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -330,6 +406,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C101A1F327CCDF9700054274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = namkibeom.MustDoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MustDo.app/MustDo";
+			};
+			name = Debug;
+		};
+		C101A1F427CCDF9700054274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = namkibeom.MustDoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MustDo.app/MustDo";
+			};
+			name = Release;
+		};
 		C1B467692770BDA200F0B282 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -505,6 +625,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C101A1F527CCDF9700054274 /* Build configuration list for PBXNativeTarget "MustDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C101A1F327CCDF9700054274 /* Debug */,
+				C101A1F427CCDF9700054274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1B467522770BDA100F0B282 /* Build configuration list for PBXProject "MustDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
