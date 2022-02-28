@@ -78,6 +78,9 @@
     - 이 부분에 대한 정확한 확인이 필요.
 - 2022.02.26
     - firebase 학습 - remote database, 회원 가입을 위해 필요
+- 2022.02.28
+    - git action 설정
+        - develop에 pr 요청 시, pod 설치 후 unit test 실행
     
 ### FELIX
 - 2022.01.20
