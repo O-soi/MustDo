@@ -81,6 +81,11 @@
 - 2022.02.28
     - git action 설정
         - develop에 pr 요청 시, pod 설치 후 unit test 실행
+- 2022.03.01
+    - WWDC 시청 및 내용 정리
+        - Add rich graphics to your SwiftUI app
+        - Craft search experiences in SwiftUI
+        - Discover concurrency in SwiftUI
     
 ### FELIX
 - 2022.01.20
