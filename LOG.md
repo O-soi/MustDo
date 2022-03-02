@@ -86,6 +86,8 @@
         - Add rich graphics to your SwiftUI app
         - Craft search experiences in SwiftUI
         - Discover concurrency in SwiftUI
+- 2022.03.02
+    - Discover concurrency in SwiftUI 학습
     
 ### FELIX
 - 2022.01.20
