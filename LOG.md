@@ -88,6 +88,10 @@
         - Discover concurrency in SwiftUI
 - 2022.03.02
     - Discover concurrency in SwiftUI 학습
+- 2022.03.03
+    - WWDC 시청 및 내용 정리
+        - Demystify SwiftUI
+        - SF Symbols in SwiftUI
     
 ### FELIX
 - 2022.01.20
