@@ -95,6 +95,9 @@
 - 2022.03.05
     - WWDC 시청 및 내용 정리
         - Demystify SwiftUI 학습 ( 40분짜리 영상... 내용이 너무 많다. )
+- 2022.03.06
+    - Demystify SwiftUI 학습 끝
+    - 타이머 개발
     
 ### FELIX
 - 2022.01.20
