@@ -29,8 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     window.makeKeyAndVisible()
                     
                 } else {
-                    let loginView = LoginView()
-                    window.rootViewController = UIHostingController(rootView: loginView)
+                    let loginViewController = LoginViewController()
+                    window.rootViewController = loginViewController
                     self.window = window
                     window.makeKeyAndVisible()
                 }

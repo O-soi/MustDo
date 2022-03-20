@@ -8,6 +8,14 @@
 import Foundation
 import UIKit
 
-final class LoginViewController: UIViewController, GoogleLoginProtocol {
+final class LoginViewController: UIViewController {
+    private let googleLoginButton = UIButton()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+extension LoginViewController: GoogleLoginProtocol {
     
 }
