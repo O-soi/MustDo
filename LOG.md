@@ -107,6 +107,10 @@
     - 번아웃 이슈..
     - 구글 로그인 기능 구현 중...
         - sdk에 viewController에서만 구현해야하는 이슈가 있음. UIHostingController 커스텀 필요
+- 2022.03.20
+    - 구글 로그인 뷰 관련 구현 중
+        - 원래 SwiftUI로 구현하려했으나 sdk 의존성 때문에 UIViewController로 구현할 것
+        - 방법이 없는 것은 아니나 나중에 유지보수를 생각했을 때 복잡도가 올라가서 꼭 SwiftUI로 구현할 필요는 없다고 느껴짐
     
 ### FELIX
 - 2022.01.20
