@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 
 protocol SceneUsecaseProtocol {
-    func reLogin() async throws
+    func reLogin() async -> Bool
 }
 
 protocol SceneUsecaseDependency {
@@ -17,21 +17,21 @@ protocol SceneUsecaseDependency {
 }
 
 extension SceneUsecaseProtocol where Self: SceneUsecaseDependency {
-    func reLogin() async throws {
-        return try await withCheckedThrowingContinuation({ (continuation: CheckedContinuation<Void, Error>) in
+    func reLogin() async -> Bool {
+        return await withCheckedContinuation({ (continuation: CheckedContinuation<Bool, Never>) in
             guard let credential = repository.getGoogleAuthCredential()
             else {
-                continuation.resume(throwing: NSError())
+                continuation.resume(returning: false)
                 return
             }
             
             Auth.auth().signIn(with: credential) { authResult, error in
-                if let error = error {
-                    continuation.resume(throwing: error)
+                if let _ = error {
+                    continuation.resume(returning: false)
                     return
                 }
                 
-                continuation.resume(returning: ())
+                continuation.resume(returning: true)
             }
         })
     }

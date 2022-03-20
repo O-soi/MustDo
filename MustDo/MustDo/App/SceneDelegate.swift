@@ -20,13 +20,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: baseView)
             
             Task {
-                do {
-                    try await self.viewModel.reLogin()
+                let isSuccededReLogin = await self.viewModel.reLogin()
+                
+                if isSuccededReLogin == true {
                     let baseView = MainTabView()
                     window.rootViewController = UIHostingController(rootView: baseView)
                     self.window = window
                     window.makeKeyAndVisible()
-                } catch {
+                    
+                } else {
                     let loginView = LoginView()
                     window.rootViewController = UIHostingController(rootView: loginView)
                     self.window = window
@@ -38,4 +40,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 }
-

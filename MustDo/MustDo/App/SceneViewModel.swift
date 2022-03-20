@@ -14,8 +14,8 @@ class SceneViewModel {
         self.sceneUsecase = usecase
     }
     
-    func reLogin() async throws {
-        try await sceneUsecase.reLogin()
+    func reLogin() async -> Bool {
+        return await sceneUsecase.reLogin()
     }
 }
 
