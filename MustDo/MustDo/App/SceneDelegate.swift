@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     window.makeKeyAndVisible()
                     
                 } else {
-                    let loginViewController = LoginViewController()
+                    let loginViewController = LoginViewController(nibName: nil, bundle: nil)
                     window.rootViewController = loginViewController
                     self.window = window
                     window.makeKeyAndVisible()
