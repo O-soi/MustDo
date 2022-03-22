@@ -16,6 +16,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setTargetAction()
         setupLayout()
         setupStyling()
     }
@@ -81,8 +82,41 @@ final class LoginViewController: UIViewController {
         googleLoginButton.backgroundColor = .gray
         googleLoginButton.layer.cornerRadius = 5
     }
+    
+    private func setTargetAction() {
+        googleLoginButton.addTarget(self, action: #selector(googleLoginAction), for: .touchUpInside)
+    }
 }
 
 extension LoginViewController: GoogleLoginProtocol {
+    @objc
+    private func googleLoginAction() {
+        Task.detached(priority: .high, operation: {
+            do {
+                try await self.requestGoogleLogin()
+            } catch let error {
+                await self.alert(with: error)
+            }
+        })
+    }
     
+    private func alert(with error: Error) {
+        let isCanceledLogin = (error as NSError).code == -5
+        
+        let alertVC = UIAlertController(
+            title: isCanceledLogin == true ? "로그인 취소" : "로그인 실패",
+            message: isCanceledLogin == true ? "로그인을 취소하셨습니다." : "로그인 에러가 발생했습니다.",
+            preferredStyle: .alert
+        )
+        
+        let alertItem = UIAlertAction(
+            title: "확인",
+            style: .default,
+            handler: nil
+        )
+        
+        alertVC.addAction(alertItem)
+        print("[🔥error] 구글 로그인 에러 - 메시지: \(error.localizedDescription)")
+        present(alertVC, animated: true, completion: nil)
+    }
 }
