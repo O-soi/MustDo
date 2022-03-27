@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class LoginViewController: UIViewController {
     private let mainTitleLabel = UILabel()
@@ -91,13 +92,24 @@ final class LoginViewController: UIViewController {
 extension LoginViewController: GoogleLoginProtocol {
     @objc
     private func googleLoginAction() {
-        Task.detached(priority: .high, operation: {
+        Task.detached(priority: .background, operation: {
             do {
-                try await self.requestGoogleLogin()
+                try await self.googleLogin()
             } catch let error {
                 await self.alert(with: error)
             }
         })
+    }
+    
+    private func googleLogin() async throws {
+        try await self.requestGoogleLogin()
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.dismiss(animated: false, completion: {
+                let baseView = MainTabView()
+                UIApplication.shared.keyWindow?.rootViewController = UIHostingController(rootView: baseView)
+            })
+        }
     }
     
     private func alert(with error: Error) {
