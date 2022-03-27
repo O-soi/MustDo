@@ -32,7 +32,7 @@ struct MustDoView: View {
                 })
             }
             .background(Color.blue.opacity(0.1))
-            .navigationTitle("MustDo")
+            .navigationBarHidden(true)
         }
     }
 }
