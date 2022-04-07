@@ -89,23 +89,27 @@ final class LoginViewController: UIViewController {
     }
 }
 
+// MARK: - Google Login Logic
 extension LoginViewController: GoogleLoginProtocol {
     @objc
     private func googleLoginAction() {
         Task.detached(priority: .background, operation: {
             do {
                 try await self.requestGoogleLogin()
-                
-                DispatchQueue.main.async { [weak self] in
-                    self?.dismiss(animated: false, completion: {
-                        let baseView = MainTabView()
-                        UIApplication.shared.keyWindow?.rootViewController = UIHostingController(rootView: baseView)
-                    })
-                }
+                await self.changeRootViewControllerAfterDismiss()
             } catch let error {
                 await self.alert(with: error)
             }
         })
+    }
+    
+    private func changeRootViewControllerAfterDismiss() {
+        DispatchQueue.main.async { [weak self] in
+            self?.dismiss(animated: false, completion: {
+                let baseView = MainTabView()
+                UIApplication.shared.keyWindow?.rootViewController = UIHostingController(rootView: baseView)
+            })
+        }
     }
     
     private func alert(with error: Error) {
