@@ -20,7 +20,7 @@
 		C138A3E327C201AA00E72130 /* MustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3E227C201AA00E72130 /* MustDo.swift */; };
 		C138A3E927C2137800E72130 /* MustDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3E827C2137800E72130 /* MustDoCell.swift */; };
 		C138A3EB27C2279B00E72130 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3EA27C2279B00E72130 /* CircleGaugeView.swift */; };
-		C13AD13627E2148E009399D6 /* SceneEffectInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AD13527E2148E009399D6 /* SceneEffectInteractor.swift */; };
+		C13AD13627E2148E009399D6 /* SceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AD13527E2148E009399D6 /* SceneInteractor.swift */; };
 		C13AD13827E21671009399D6 /* SceneRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AD13727E21671009399D6 /* SceneRepository.swift */; };
 		C1A48ED527DDFF1A009842F9 /* GoogleLoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A48ED427DDFF1A009842F9 /* GoogleLoginProtocol.swift */; };
 		C1B2C0A227E750770095A27B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2C0A127E750770095A27B /* LoginViewController.swift */; };
@@ -60,7 +60,7 @@
 		C138A3E227C201AA00E72130 /* MustDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDo.swift; sourceTree = "<group>"; };
 		C138A3E827C2137800E72130 /* MustDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoCell.swift; sourceTree = "<group>"; };
 		C138A3EA27C2279B00E72130 /* CircleGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
-		C13AD13527E2148E009399D6 /* SceneEffectInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneEffectInteractor.swift; sourceTree = "<group>"; };
+		C13AD13527E2148E009399D6 /* SceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneInteractor.swift; sourceTree = "<group>"; };
 		C13AD13727E21671009399D6 /* SceneRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRepository.swift; sourceTree = "<group>"; };
 		C1A48ED427DDFF1A009842F9 /* GoogleLoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginProtocol.swift; sourceTree = "<group>"; };
 		C1B2C0A127E750770095A27B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				C1B4675A2770BDA100F0B282 /* AppDelegate.swift */,
 				C1B4675C2770BDA100F0B282 /* SceneDelegate.swift */,
 				C1BEDB2927FC976000A18484 /* SceneReducer.swift */,
-				C13AD13527E2148E009399D6 /* SceneEffectInteractor.swift */,
+				C13AD13527E2148E009399D6 /* SceneInteractor.swift */,
 				C13AD13727E21671009399D6 /* SceneRepository.swift */,
 			);
 			path = App;
@@ -415,7 +415,7 @@
 				C138A3D327C1EE8700E72130 /* MainTabView.swift in Sources */,
 				C1A48ED527DDFF1A009842F9 /* GoogleLoginProtocol.swift in Sources */,
 				C1B2C0A227E750770095A27B /* LoginViewController.swift in Sources */,
-				C13AD13627E2148E009399D6 /* SceneEffectInteractor.swift in Sources */,
+				C13AD13627E2148E009399D6 /* SceneInteractor.swift in Sources */,
 				C12DEB4727ECBD8F00B88E8B /* UIApplication+Extension.swift in Sources */,
 				C138A3DF27C1F9C900E72130 /* MustDoRepository.swift in Sources */,
 				C1B4675D2770BDA100F0B282 /* SceneDelegate.swift in Sources */,

@@ -10,15 +10,15 @@ import FirebaseAuth
 import ComposableArchitecture
 import Combine
 
-protocol SceneEffectInteractorProtocol {
+protocol SceneInteractorProtocol {
     func reLoginGoogle() -> Effect<Bool, Error>
 }
 
-protocol SceneEffectInteractorDependency {
+protocol SceneInteractorDependency {
     var repository: SceneRepositoryProtocol { get }
 }
 
-extension SceneEffectInteractorProtocol where Self: SceneEffectInteractorDependency {
+extension SceneInteractorProtocol where Self: SceneInteractorDependency {
     func reLoginGoogle() -> Effect<Bool, Error> {
         guard let credential = repository.getGoogleAuthCredential()
         else { return Effect(value: false) }
@@ -37,7 +37,7 @@ extension SceneEffectInteractorProtocol where Self: SceneEffectInteractorDepende
     }
 }
 
-class SceneEffectInteractor: SceneEffectInteractorProtocol, SceneEffectInteractorDependency {
+class SceneInteractor: SceneInteractorProtocol, SceneInteractorDependency {
     let repository: SceneRepositoryProtocol
     
     init(repository: SceneRepositoryProtocol) {
@@ -45,8 +45,8 @@ class SceneEffectInteractor: SceneEffectInteractorProtocol, SceneEffectInteracto
     }
 }
 
-extension SceneEffectInteractor {
-    static func factory(repository: SceneRepositoryProtocol = SceneRepository()) -> SceneEffectInteractor {
-        return SceneEffectInteractor(repository: repository)
+extension SceneInteractor {
+    static func factory(repository: SceneRepositoryProtocol = SceneRepository()) -> SceneInteractor {
+        return SceneInteractor(repository: repository)
     }
 }

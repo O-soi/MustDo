@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             reducer: sceneReducer,
             environment: SceneEnvironment(
                 queue: DispatchQueue.main.eraseToAnyScheduler(),
-                interactor: SceneEffectInteractor.factory()
+                interactor: SceneInteractor.factory()
             )
         )
     )
