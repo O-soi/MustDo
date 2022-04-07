@@ -150,6 +150,11 @@
         - 기존 비즈니스 로직은 reducer가 처리하지만, side effect에 대한 처리만 EffectInteractor가 처리해주는 방식(클린아키텍처에서의 usecase와 비슷한 느낌)
         - repository는 EffectInteractor가 가지고 있음.
         - 글을 작성하다가 든 생각인데, EffectInteractor보단 그냥 Intercator로 가는게 나을려나...라는 생각이 든다. 근데 그냥 EffectInteractor가 나은거 같다. 요건 근데 좀 생각해봐야 할듯
+- 2022.04.07
+    - TCA 리펙터링 작업중
+        - 구글 로그인 API 관련해서는 TCA로 리펙터링하기 힘들어보임. (UIViewController에 대한 dependency가 있어서 불가능)
+        - LazyStack으로 리스트가 구현되어있는데 delete나 add를 어떤 식으로 반영되는지, UI Animation은 적용이 되는지 궁금함. (시도해봐야 알듯. 만약에 부자연 스러우면 List로 교체할 예정)
+        - async/await는 비동기 호출을 연속적으로 수행해야할 때만 쓰는게 좋을 것 같음. 그 이외의 상황엔 Combine으로 처리
     
 ### FELIX
 - 2022.01.20
