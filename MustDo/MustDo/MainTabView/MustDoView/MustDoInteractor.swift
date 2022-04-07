@@ -7,29 +7,32 @@
 
 import Foundation
 import Combine
+import ComposableArchitecture
 
-protocol MustDoUsecaseOutputProtocol {
-    func requestMustDoList(userID: Int) -> AnyPublisher<[MustDo], Never>
+protocol MustDoInteractorOutputProtocol {
+    func requestMustDoList(userID: Int) -> Effect<[MustDo], Error>
 }
 
-protocol MustDoUsecaseInputProtocol {
+protocol MustDoInteractorInputProtocol {
     func addMustDo(userID: Int)
     func updateMustDo(userID: Int, percent: Double)
 }
 
-protocol MustDoUsecaseProtocol: MustDoUsecaseInputProtocol, MustDoUsecaseOutputProtocol { }
+protocol MustDoInteractorProtocol: MustDoInteractorInputProtocol, MustDoInteractorOutputProtocol { }
 
 protocol MustDoDependency {
     var repository: MustDoRepositoryProtocol { get }
 }
 
-extension MustDoUsecaseInputProtocol where Self: MustDoDependency {
-    func requestMustDoList(userID: Int) -> AnyPublisher<[MustDo], Never> {
-        return repository.requestMustDoList(userID: userID)
+extension MustDoInteractorInputProtocol where Self: MustDoDependency {
+    func requestMustDoList(userID: Int) -> Effect<[MustDo], Error> {
+        return repository
+            .requestMustDoList(userID: userID)
+            .eraseToEffect()
     }
 }
 
-extension MustDoUsecaseOutputProtocol where Self: MustDoDependency {
+extension MustDoInteractorOutputProtocol where Self: MustDoDependency {
     func addMustDo(userID: Int) {
         repository.addMustDo(userID: userID)
     }
@@ -39,7 +42,7 @@ extension MustDoUsecaseOutputProtocol where Self: MustDoDependency {
     }
 }
 
-class MustDoUsecase: MustDoUsecaseProtocol, MustDoDependency {
+class MustDoInteractor: MustDoInteractorProtocol, MustDoDependency {
     var repository: MustDoRepositoryProtocol
     
     init(repository: MustDoRepositoryProtocol) {

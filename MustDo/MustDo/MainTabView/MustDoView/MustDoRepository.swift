@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol MustDoRepositoryProtocol {
-    func requestMustDoList(userID: Int) -> AnyPublisher<[MustDo], Never>
+    func requestMustDoList(userID: Int) -> Future<[MustDo], Error>
     func addMustDo(userID: Int)
     func updateMustDo(userID: Int, percent: Double)
 }
@@ -17,7 +17,7 @@ protocol MustDoRepositoryProtocol {
 class MustDoRepository: MustDoRepositoryProtocol {
 //    let local: LocalDB
     
-    func requestMustDoList(userID: Int) -> AnyPublisher<[MustDo], Never> {
+    func requestMustDoList(userID: Int) -> Future<[MustDo], Error> {
         let dummyArray = Array.init(repeating: 0, count: 15)
             .map { _ in
                 MustDo(
@@ -29,8 +29,9 @@ class MustDoRepository: MustDoRepositoryProtocol {
                 )
             }
         
-        return Just(dummyArray)
-            .eraseToAnyPublisher()
+        return Future { promise in
+            promise(.success(dummyArray))
+        }
     }
     
     func addMustDo(userID: Int) {

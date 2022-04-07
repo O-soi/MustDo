@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import ComposableArchitecture
 import Combine
 
 class MustDoViewModel: ObservableObject {
-    private let mustDoUsecase: MustDoUsecaseProtocol
+    private let mustDoUsecase: MustDoInteractorProtocol
     
     @Published var mustDoList: [MustDo] = []
     
-    init(mustDoUsecase: MustDoUsecaseProtocol) {
+    init(mustDoUsecase: MustDoInteractorProtocol) {
         self.mustDoUsecase = mustDoUsecase
     }
     
@@ -37,7 +38,7 @@ class MustDoViewModel: ObservableObject {
 extension MustDoViewModel {
     static func factory() -> MustDoViewModel {
         let repository = MustDoRepository()
-        let mustDoUsecase = MustDoUsecase(repository: repository)
+        let mustDoUsecase = MustDoInteractor(repository: repository)
         let viewModel = MustDoViewModel(mustDoUsecase: mustDoUsecase)
         return viewModel
     }
