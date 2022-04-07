@@ -20,7 +20,7 @@ enum SceneAction {
 
 struct SceneEnvironment {
     var queue: AnySchedulerOf<DispatchQueue>
-    var interactor: SceneEffectInteractorProtocol
+    var interactor: SceneInteractorProtocol
 }
 
 let sceneReducer = Reducer<SceneState, SceneAction, SceneEnvironment> { state, action, environment in
