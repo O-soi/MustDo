@@ -155,6 +155,10 @@
         - 구글 로그인 API 관련해서는 TCA로 리펙터링하기 힘들어보임. (UIViewController에 대한 dependency가 있어서 불가능)
         - LazyStack으로 리스트가 구현되어있는데 delete나 add를 어떤 식으로 반영되는지, UI Animation은 적용이 되는지 궁금함. (시도해봐야 알듯. 만약에 부자연 스러우면 List로 교체할 예정)
         - async/await는 비동기 호출을 연속적으로 수행해야할 때만 쓰는게 좋을 것 같음. 그 이외의 상황엔 Combine으로 처리
+- 2022.04.10
+    - TCA 리펙터링 작업중
+        - MustDoView 리펙터링
+        - State Equatable 조건 때문에 삽질... 같은 State일 경우, 업데이트하지 않음. 
     
 ### FELIX
 - 2022.01.20
