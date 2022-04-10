@@ -14,7 +14,6 @@
 		C138A3D327C1EE8700E72130 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D227C1EE8700E72130 /* MainTabView.swift */; };
 		C138A3D627C1F0C100E72130 /* MustDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D527C1F0C100E72130 /* MustDoView.swift */; };
 		C138A3D927C1F0D400E72130 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3D827C1F0D400E72130 /* SettingView.swift */; };
-		C138A3DB27C1F73800E72130 /* MustDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3DA27C1F73800E72130 /* MustDoViewModel.swift */; };
 		C138A3DD27C1F7F000E72130 /* MustDoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3DC27C1F7F000E72130 /* MustDoInteractor.swift */; };
 		C138A3DF27C1F9C900E72130 /* MustDoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3DE27C1F9C900E72130 /* MustDoRepository.swift */; };
 		C138A3E327C201AA00E72130 /* MustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3E227C201AA00E72130 /* MustDo.swift */; };
@@ -55,7 +54,6 @@
 		C138A3D227C1EE8700E72130 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C138A3D527C1F0C100E72130 /* MustDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoView.swift; sourceTree = "<group>"; };
 		C138A3D827C1F0D400E72130 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		C138A3DA27C1F73800E72130 /* MustDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoViewModel.swift; sourceTree = "<group>"; };
 		C138A3DC27C1F7F000E72130 /* MustDoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoInteractor.swift; sourceTree = "<group>"; };
 		C138A3DE27C1F9C900E72130 /* MustDoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoRepository.swift; sourceTree = "<group>"; };
 		C138A3E227C201AA00E72130 /* MustDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDo.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				C1C31F1D27C522A90050FC66 /* CircleTimerView */,
 				C138A3E127C2019800E72130 /* View */,
 				C138A3E027C2018A00E72130 /* Data */,
-				C138A3DA27C1F73800E72130 /* MustDoViewModel.swift */,
 				C1B01FB827FF0C09003C346F /* MustDoReducer.swift */,
 				C138A3DC27C1F7F000E72130 /* MustDoInteractor.swift */,
 				C138A3DE27C1F9C900E72130 /* MustDoRepository.swift */,
@@ -424,7 +421,6 @@
 				C138A3DF27C1F9C900E72130 /* MustDoRepository.swift in Sources */,
 				C1B4675D2770BDA100F0B282 /* SceneDelegate.swift in Sources */,
 				C138A3EB27C2279B00E72130 /* CircleGaugeView.swift in Sources */,
-				C138A3DB27C1F73800E72130 /* MustDoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

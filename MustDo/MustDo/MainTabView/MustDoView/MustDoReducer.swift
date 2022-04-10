@@ -9,8 +9,17 @@ import Foundation
 import Combine
 import ComposableArchitecture
 
-struct MustDoState {
-    @BindableState var mustDoList: [MustDo] = []
+struct MustDoState: Equatable {
+    static func == (lhs: MustDoState, rhs: MustDoState) -> Bool {
+        let count = lhs.mustDoList.filter { mustDo in
+            rhs.mustDoList.filter { $0.id == mustDo.id }.count == 1
+        }.count
+        
+        return lhs.mustDoList.count == count
+        && lhs.mustDoList.count == rhs.mustDoList.count
+    }
+    
+    var mustDoList: [MustDo] = []
 }
 
 enum MustDoAction {

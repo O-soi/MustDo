@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct MainTabView: View {
     
@@ -15,7 +16,13 @@ struct MainTabView: View {
     
     var body: some View {
         TabView {
-            MustDoView()
+            MustDoView(store: Store(
+                initialState: MustDoState(),
+                reducer: mustDoReducer,
+                environment: MustDoEnvironment(
+                    queue: DispatchQueue.main.eraseToAnyScheduler(),
+                    interactor: MustDoInteractor(repository: MustDoRepository())
+                )))
                 .tabItem {
                     Text("MustDo")
                 }
