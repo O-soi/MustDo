@@ -6,15 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct MustDoView: View {
-    @StateObject private var viewModel = MustDoViewModel.factory()
+    let store: Store<MustDoState, MustDoAction>
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVStack(spacing: 10) {
-                    ForEach(viewModel.mustDoList) { mustDo in
+        WithViewStore(self.store) { viewStore in
+            NavigationView {
+                List {
+                    ForEach(viewStore.state.mustDoList) { mustDo in
                         NavigationLink {
                             CirecleTimerView()
                         } label: {
@@ -24,21 +25,24 @@ struct MustDoView: View {
                         }
                     }
                 }
-                .padding()
-                .onAppear(perform: {
-                    Task.detached(priority: .background) {
-                        try? await viewModel.requestMustDoList(userID: 0)
-                    }
-                })
+                .navigationBarHidden(true)
             }
-            .background(Color.blue.opacity(0.1))
-            .navigationBarHidden(true)
+            .onAppear {
+                viewStore.send(.requestMustDoList(userID: 0))
+            }
         }
     }
 }
 
 struct MustDoView_Previews: PreviewProvider {
     static var previews: some View {
-        MustDoView()
+        MustDoView(store: Store(
+            initialState: MustDoState(),
+            reducer: mustDoReducer,
+            environment: MustDoEnvironment(
+                queue: DispatchQueue.main.eraseToAnyScheduler(),
+                interactor: MustDoInteractor(repository: MustDoRepository())
+            ))
+        )
     }
 }
