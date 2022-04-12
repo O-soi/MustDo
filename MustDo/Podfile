@@ -13,4 +13,14 @@ target 'MustDo' do
 
   # Pods for MustDo
 
+target 'MustDoTests' do
+
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Database'
+  pod 'GoogleSignIn'
+
+end
+
 end
