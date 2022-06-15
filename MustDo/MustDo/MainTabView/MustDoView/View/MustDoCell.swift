@@ -11,21 +11,65 @@ struct MustDoCell: View {
     let mustDo: MustDo
     
     var body: some View {
-        HStack {
-            CircleGaugeView(progress: mustDo.gauge)
-                .frame(width: 60, height: 60, alignment: .center)
-                .padding()
-            
-            VStack(alignment: .leading, spacing: 5) {
-                makeMustDoInfoView(title: "해야할 일", dataString: mustDo.title)
-                makeMustDoInfoView(title: "소요 시간", dataString: "\(mustDo.elapsedSeconds)초")
-                makeMustDoInfoView(title: "수행 시간", dataString: "\(mustDo.performedSeconds)초")
-            }
-            .padding([.top, .bottom])
-            
-            Spacer()
+        HStack(spacing: 3) {
+            VStack {
+                Spacer()
                 
+                Text("\(Int(mustDo.gauge*100))%")
+                    .padding([.leading], 8)
+                    .font(.system(size: 12))
+                    .foregroundColor(.black)
+                
+                Spacer()
+            }
+            .frame(width: 80, alignment: .leading)
+            .background(.white)
+            .overlay(
+                RoundedRectangle(cornerRadius: 3)
+                    .stroke(Color.init(hex: "D5D5D5"), lineWidth: 2)
+            )
+            
+            HStack {
+                Spacer()
+                
+                VStack(alignment: .leading) {
+                    Spacer()
+                    
+                    Text("\(mustDo.title)")
+                        .padding([.leading], 8)
+                        .font(.system(size: 12))
+                        .foregroundColor(.black)
+                    
+                    Spacer()
+                }
+                
+                Spacer()
+            }
+            .background(.white)
+            .overlay(
+                RoundedRectangle(cornerRadius: 3)
+                    .stroke(Color.init(hex: "62C15B"), lineWidth: 2)
+            )
+            
+            VStack {
+                Spacer()
+                
+                Text("\(mustDo.elapsedSeconds / 3600)시간")
+                    .padding([.leading], 8)
+                    .font(.system(size: 12))
+                    .foregroundColor(.black)
+                
+                Spacer()
+            }
+            .frame(width: 50, alignment: .leading)
+            .background(.white)
+            .overlay(
+                RoundedRectangle(cornerRadius: 3)
+                    .stroke(Color.init(hex: "D5D5D5"), lineWidth: 2)
+            )
         }
+        .padding([.leading], 36)
+        .padding([.trailing], 24)
     }
 }
 
