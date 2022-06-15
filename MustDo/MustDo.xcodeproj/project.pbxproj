@@ -22,6 +22,7 @@
 		C138A3EB27C2279B00E72130 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C138A3EA27C2279B00E72130 /* CircleGaugeView.swift */; };
 		C13AD13627E2148E009399D6 /* SceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AD13527E2148E009399D6 /* SceneInteractor.swift */; };
 		C13AD13827E21671009399D6 /* SceneRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AD13727E21671009399D6 /* SceneRepository.swift */; };
+		C1A4522B285A35EE00612A56 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4522A285A35EE00612A56 /* Color+Extension.swift */; };
 		C1A48ED527DDFF1A009842F9 /* GoogleLoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A48ED427DDFF1A009842F9 /* GoogleLoginProtocol.swift */; };
 		C1B01FB927FF0C09003C346F /* MustDoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B01FB827FF0C09003C346F /* MustDoReducer.swift */; };
 		C1B2C0A227E750770095A27B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B2C0A127E750770095A27B /* LoginViewController.swift */; };
@@ -66,6 +67,7 @@
 		C138A3EA27C2279B00E72130 /* CircleGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
 		C13AD13527E2148E009399D6 /* SceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneInteractor.swift; sourceTree = "<group>"; };
 		C13AD13727E21671009399D6 /* SceneRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRepository.swift; sourceTree = "<group>"; };
+		C1A4522A285A35EE00612A56 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C1A48ED427DDFF1A009842F9 /* GoogleLoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginProtocol.swift; sourceTree = "<group>"; };
 		C1B01FB827FF0C09003C346F /* MustDoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoReducer.swift; sourceTree = "<group>"; };
 		C1B2C0A127E750770095A27B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				C1B8679F27AC0EA1008283BB /* CombineAsyncStream.swift */,
 				C138A3EA27C2279B00E72130 /* CircleGaugeView.swift */,
 				C12DEB4627ECBD8F00B88E8B /* UIApplication+Extension.swift */,
+				C1A4522A285A35EE00612A56 /* Color+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				C138A3DD27C1F7F000E72130 /* MustDoInteractor.swift in Sources */,
 				C138A3E927C2137800E72130 /* MustDoCell.swift in Sources */,
 				C138A3D927C1F0D400E72130 /* SettingView.swift in Sources */,
+				C1A4522B285A35EE00612A56 /* Color+Extension.swift in Sources */,
 				C138A3D327C1EE8700E72130 /* MainTabView.swift in Sources */,
 				C1A48ED527DDFF1A009842F9 /* GoogleLoginProtocol.swift in Sources */,
 				C1B2C0A227E750770095A27B /* LoginViewController.swift in Sources */,
@@ -669,6 +673,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7GUZQPQHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MustDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -697,6 +702,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7GUZQPQHZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MustDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
