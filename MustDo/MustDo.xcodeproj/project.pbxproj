@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C1F7D4F3295A5EEE00522657 /* MustDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */; };
-		C1F7D4F5295A5EEE00522657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D4F4295A5EEE00522657 /* ContentView.swift */; };
 		C1F7D4F7295A5EEF00522657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F7D4F6295A5EEF00522657 /* Assets.xcassets */; };
 		C1F7D4FA295A5EEF00522657 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F7D4F9295A5EEF00522657 /* Preview Assets.xcassets */; };
 		C1F7D504295A5EEF00522657 /* MustDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D503295A5EEF00522657 /* MustDoTests.swift */; };
+		C1F7D522295A606100522657 /* MustDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D521295A606100522657 /* MustDoListView.swift */; };
+		C1F7D524295A60D900522657 /* MustDoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D523295A60D900522657 /* MustDoListInteractor.swift */; };
+		C1F7D526295A611D00522657 /* MustDoListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D525295A611D00522657 /* MustDoListUsecase.swift */; };
+		C1F7D529295A620000522657 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D528295A620000522657 /* Repository.swift */; };
+		C1F7D52E295A649C00522657 /* BeomkeyRemote in Frameworks */ = {isa = PBXBuildFile; productRef = C1F7D52D295A649C00522657 /* BeomkeyRemote */; };
+		C1F7D530295A64DE00522657 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D52F295A64DE00522657 /* RemoteAPI.swift */; };
+		C1F7D533295A66D800522657 /* MustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D532295A66D800522657 /* MustDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +33,16 @@
 /* Begin PBXFileReference section */
 		C1F7D4EF295A5EEE00522657 /* MustDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MustDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoApp.swift; sourceTree = "<group>"; };
-		C1F7D4F4295A5EEE00522657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1F7D4F6295A5EEF00522657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1F7D4F9295A5EEF00522657 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1F7D4FF295A5EEF00522657 /* MustDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F7D503295A5EEF00522657 /* MustDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTests.swift; sourceTree = "<group>"; };
+		C1F7D521295A606100522657 /* MustDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoListView.swift; sourceTree = "<group>"; };
+		C1F7D523295A60D900522657 /* MustDoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoListInteractor.swift; sourceTree = "<group>"; };
+		C1F7D525295A611D00522657 /* MustDoListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoListUsecase.swift; sourceTree = "<group>"; };
+		C1F7D528295A620000522657 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C1F7D52F295A64DE00522657 /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		C1F7D532295A66D800522657 /* MustDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F7D52E295A649C00522657 /* BeomkeyRemote in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,8 +85,11 @@
 		C1F7D4F1295A5EEE00522657 /* MustDo */ = {
 			isa = PBXGroup;
 			children = (
-				C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */,
-				C1F7D4F4295A5EEE00522657 /* ContentView.swift */,
+				C1F7D51C295A600D00522657 /* App */,
+				C1F7D520295A602E00522657 /* Interactor */,
+				C1F7D51F295A602600522657 /* Usecase */,
+				C1F7D527295A61D100522657 /* Repository */,
+				C1F7D51D295A601300522657 /* View */,
 				C1F7D4F6295A5EEF00522657 /* Assets.xcassets */,
 				C1F7D4F8295A5EEF00522657 /* Preview Content */,
 			);
@@ -97,6 +112,64 @@
 			path = MustDoTests;
 			sourceTree = "<group>";
 		};
+		C1F7D51C295A600D00522657 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C1F7D51D295A601300522657 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D521295A606100522657 /* MustDoListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1F7D51F295A602600522657 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D525295A611D00522657 /* MustDoListUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		C1F7D520295A602E00522657 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D523295A60D900522657 /* MustDoListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C1F7D527295A61D100522657 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D531295A66CB00522657 /* DataModel */,
+				C1F7D52A295A629900522657 /* Remote */,
+				C1F7D528295A620000522657 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C1F7D52A295A629900522657 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D52F295A64DE00522657 /* RemoteAPI.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		C1F7D531295A66CB00522657 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D532295A66D800522657 /* MustDo.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +186,9 @@
 			dependencies = (
 			);
 			name = MustDo;
+			packageProductDependencies = (
+				C1F7D52D295A649C00522657 /* BeomkeyRemote */,
+			);
 			productName = MustDo;
 			productReference = C1F7D4EF295A5EEE00522657 /* MustDo.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +239,9 @@
 				Base,
 			);
 			mainGroup = C1F7D4E6295A5EEE00522657;
+			packageReferences = (
+				C1F7D52C295A649C00522657 /* XCRemoteSwiftPackageReference "BeomkeyRemote" */,
+			);
 			productRefGroup = C1F7D4F0295A5EEE00522657 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,7 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F7D4F5295A5EEE00522657 /* ContentView.swift in Sources */,
+				C1F7D526295A611D00522657 /* MustDoListUsecase.swift in Sources */,
+				C1F7D524295A60D900522657 /* MustDoListInteractor.swift in Sources */,
+				C1F7D533295A66D800522657 /* MustDo.swift in Sources */,
+				C1F7D529295A620000522657 /* Repository.swift in Sources */,
+				C1F7D522295A606100522657 /* MustDoListView.swift in Sources */,
+				C1F7D530295A64DE00522657 /* RemoteAPI.swift in Sources */,
 				C1F7D4F3295A5EEE00522657 /* MustDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZV2S86XXA;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = namkibeom.MustDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +508,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZV2S86XXA;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = namkibeom.MustDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1F7D52C295A649C00522657 /* XCRemoteSwiftPackageReference "BeomkeyRemote" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/beomkey-nkb/BeomkeyRemote";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1F7D52D295A649C00522657 /* BeomkeyRemote */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1F7D52C295A649C00522657 /* XCRemoteSwiftPackageReference "BeomkeyRemote" */;
+			productName = BeomkeyRemote;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1F7D4E7295A5EEE00522657 /* Project object */;
 }

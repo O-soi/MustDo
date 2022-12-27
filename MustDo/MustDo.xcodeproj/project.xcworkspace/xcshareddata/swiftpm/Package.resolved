@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "78424be314842833c04bc3bef5b72e85fff99204",
+        "version" : "5.6.4"
+      }
+    },
+    {
+      "identity" : "beomkeyremote",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/beomkey-nkb/BeomkeyRemote",
+      "state" : {
+        "branch" : "master",
+        "revision" : "75a4825b62d71f21dd47aa8a00acba4b5d5cea12"
+      }
+    }
+  ],
+  "version" : 2
+}
