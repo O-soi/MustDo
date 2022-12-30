@@ -15,12 +15,12 @@ final class MustDoListInteractor: ObservableObject {
     
     func loadMustDoList() {
         mustDoList = [
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test"),
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test"),
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test"),
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test"),
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test"),
-            MustDo(repeatDays: [.mon], duration: 3600, discription: "test")
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
+            MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.")
         ]
     }
 }

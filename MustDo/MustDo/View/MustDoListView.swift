@@ -11,19 +11,45 @@ struct MustDoCell: View {
     var mustDo: MustDo
     
     var body: some View {
-        Text("mustDo")
+        HStack {
+            VStack(alignment: .leading) {
+                Text(mustDo.discription)
+                    .font(.system(size: 16, weight: .medium))
+                
+                Text("⏰ 1시간 30분")
+                    .font(.system(size: 14, weight: .medium))
+                    .padding(.top, 3.0)
+            }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        }
+        .background(.white)
+        .cornerRadius(15)
     }
 }
 
 struct MustDoListView: View {
-    @StateObject var interactor: MustDoListInteractor
+    @StateObject var interactor = MustDoListInteractor()
     
     var body: some View {
-        List(interactor.mustDoList, id: \.id) {
-            MustDoCell(mustDo: $0)
-        }
-        .onAppear {
-            interactor.loadMustDoList()
+        VStack {
+            NavigationView()
+                .frame(height: 40)
+            
+            ScrollView {
+                LazyVGrid(
+                    columns: [GridItem(.flexible())],
+                    content: {
+                        ForEach(interactor.mustDoList) {
+                            MustDoCell(mustDo: $0)
+                                .padding(5)
+                        }
+                    })
+                .onAppear {
+                    interactor.loadMustDoList()
+                }
+            }
+            .padding(.top, 8)
+            .background(Color.init(hex: "F6F6F6"))
         }
     }
 }
@@ -31,7 +57,7 @@ struct MustDoListView: View {
 #if DEBUG
 struct MustDoListView_Previews: PreviewProvider {
     static var previews: some View {
-        MustDoListView(interactor: MustDoListInteractor())
+        MustDoListView()
     }
 }
 #endif

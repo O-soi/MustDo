@@ -11,7 +11,7 @@ import SwiftUI
 struct MustDoApp: App {
     var body: some Scene {
         WindowGroup {
-            MustDoListView(interactor: MustDoListInteractor())
+            MustDoListView()
         }
     }
 }
