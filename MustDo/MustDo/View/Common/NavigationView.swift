@@ -9,8 +9,10 @@ import Foundation
 import SwiftUI
 
 struct NavigationView: View {
+    var title: String
+    
     var body: some View {
-        Text("MustDo")
+        Text(title)
             .font(.headline)
     }
 }

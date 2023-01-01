@@ -32,7 +32,7 @@ struct MustDoListView: View {
     
     var body: some View {
         VStack {
-            NavigationView()
+            NavigationView(title: "MustDo")
                 .frame(height: 40)
             
             ScrollView {

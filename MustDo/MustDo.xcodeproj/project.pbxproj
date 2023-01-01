@@ -68,6 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C131CB4F2961B5A800B7961C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C19B3681295F3AE500419BC0 /* NavigationView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C131CB502961B5EB00B7961C /* MustDoList */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7D521295A606100522657 /* MustDoListView.swift */,
+			);
+			path = MustDoList;
+			sourceTree = "<group>";
+		};
 		C19B367C295F392300419BC0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +152,8 @@
 		C1F7D51D295A601300522657 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C1F7D521295A606100522657 /* MustDoListView.swift */,
-				C19B3681295F3AE500419BC0 /* NavigationView.swift */,
+				C131CB502961B5EB00B7961C /* MustDoList */,
+				C131CB4F2961B5A800B7961C /* Common */,
 			);
 			path = View;
 			sourceTree = "<group>";
