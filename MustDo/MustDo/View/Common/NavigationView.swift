@@ -10,9 +10,10 @@ import SwiftUI
 
 struct NavigationView: View {
     var title: String
+    var fontType: FontType = .watermelonSalad
     
     var body: some View {
         Text(title)
-            .font(.headline)
+            .font(.custom(fontType.rawValue, size: 16))
     }
 }

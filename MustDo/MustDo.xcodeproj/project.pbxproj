@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C19B367E295F393500419BC0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B367D295F393500419BC0 /* Color+Extension.swift */; };
 		C19B3682295F3AE500419BC0 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B3681295F3AE500419BC0 /* NavigationView.swift */; };
+		C1D9664D2968F69C00C0C554 /* TodayChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9664C2968F69C00C0C554 /* TodayChangeView.swift */; };
+		C1D9665029690D3300C0C554 /* Flower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1D9664F29690D3300C0C554 /* Flower.ttf */; };
+		C1D96653296910D700C0C554 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D96652296910D700C0C554 /* FontType.swift */; };
+		C1D966552969111D00C0C554 /* watermelonSalad.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1D966542969111D00C0C554 /* watermelonSalad.ttf */; };
 		C1F7D4F3295A5EEE00522657 /* MustDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */; };
 		C1F7D4F7295A5EEF00522657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F7D4F6295A5EEF00522657 /* Assets.xcassets */; };
 		C1F7D4FA295A5EEF00522657 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F7D4F9295A5EEF00522657 /* Preview Assets.xcassets */; };
@@ -35,6 +39,11 @@
 /* Begin PBXFileReference section */
 		C19B367D295F393500419BC0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C19B3681295F3AE500419BC0 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		C1D9664C2968F69C00C0C554 /* TodayChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayChangeView.swift; sourceTree = "<group>"; };
+		C1D9664F29690D3300C0C554 /* Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower.ttf; sourceTree = "<group>"; };
+		C1D9665129690E4800C0C554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C1D96652296910D700C0C554 /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		C1D966542969111D00C0C554 /* watermelonSalad.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = watermelonSalad.ttf; sourceTree = "<group>"; };
 		C1F7D4EF295A5EEE00522657 /* MustDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MustDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F7D4F2295A5EEE00522657 /* MustDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoApp.swift; sourceTree = "<group>"; };
 		C1F7D4F6295A5EEF00522657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C1F7D521295A606100522657 /* MustDoListView.swift */,
+				C1D9664C2968F69C00C0C554 /* TodayChangeView.swift */,
 			);
 			path = MustDoList;
 			sourceTree = "<group>";
@@ -90,6 +100,16 @@
 				C19B367D295F393500419BC0 /* Color+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C1D9664E29690D0F00C0C554 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				C1D96652296910D700C0C554 /* FontType.swift */,
+				C1D9664F29690D3300C0C554 /* Flower.ttf */,
+				C1D966542969111D00C0C554 /* watermelonSalad.ttf */,
+			);
+			path = CustomFont;
 			sourceTree = "<group>";
 		};
 		C1F7D4E6295A5EEE00522657 = {
@@ -113,6 +133,8 @@
 		C1F7D4F1295A5EEE00522657 /* MustDo */ = {
 			isa = PBXGroup;
 			children = (
+				C1D9665129690E4800C0C554 /* Info.plist */,
+				C1D9664E29690D0F00C0C554 /* CustomFont */,
 				C1F7D51C295A600D00522657 /* App */,
 				C1F7D520295A602E00522657 /* Interactor */,
 				C1F7D51F295A602600522657 /* Usecase */,
@@ -287,7 +309,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D9665029690D3300C0C554 /* Flower.ttf in Resources */,
 				C1F7D4FA295A5EEF00522657 /* Preview Assets.xcassets in Resources */,
+				C1D966552969111D00C0C554 /* watermelonSalad.ttf in Resources */,
 				C1F7D4F7295A5EEF00522657 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,8 +332,10 @@
 			files = (
 				C1F7D526295A611D00522657 /* MustDoListUsecase.swift in Sources */,
 				C19B3682295F3AE500419BC0 /* NavigationView.swift in Sources */,
+				C1D96653296910D700C0C554 /* FontType.swift in Sources */,
 				C1F7D524295A60D900522657 /* MustDoListInteractor.swift in Sources */,
 				C1F7D533295A66D800522657 /* MustDo.swift in Sources */,
+				C1D9664D2968F69C00C0C554 /* TodayChangeView.swift in Sources */,
 				C1F7D529295A620000522657 /* Repository.swift in Sources */,
 				C1F7D522295A606100522657 /* MustDoListView.swift in Sources */,
 				C1F7D530295A64DE00522657 /* RemoteAPI.swift in Sources */,
@@ -462,6 +488,7 @@
 				DEVELOPMENT_TEAM = 2ZV2S86XXA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MustDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,6 +519,7 @@
 				DEVELOPMENT_TEAM = 2ZV2S86XXA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MustDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

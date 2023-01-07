@@ -12,6 +12,7 @@ final class MustDoListInteractor: ObservableObject {
     private let mustDoListUsecase = MustDoListUsecase()
     
     @Published var mustDoList: [MustDo] = []
+    @Published var currentDay: String = "23.12.22"
     
     func loadMustDoList() {
         mustDoList = [
@@ -22,5 +23,13 @@ final class MustDoListInteractor: ObservableObject {
             MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
             MustDo(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.")
         ]
+    }
+    
+    func movePrevDay() {
+        
+    }
+    
+    func moveNextDay() {
+        
     }
 }

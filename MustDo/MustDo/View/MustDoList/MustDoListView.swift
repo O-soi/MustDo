@@ -9,21 +9,29 @@ import SwiftUI
 
 struct MustDoCell: View {
     var mustDo: MustDo
+    var fontType: FontType = .watermelonSalad
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(mustDo.discription)
-                    .font(.system(size: 16, weight: .medium))
+                    .font(.custom(fontType.rawValue, size: 17))
+                    .fontWeight(.semibold)
                 
-                Text("⏰ 1시간 30분")
-                    .font(.system(size: 14, weight: .medium))
-                    .padding(.top, 3.0)
+                HStack(spacing: 3) {
+                    Image("timer")
+                        .frame(width: 20, height: 20)
+                    
+                    Text("1시간 30분")
+                        .font(.custom(fontType.rawValue, size: 15))
+                        .fontWeight(.medium)
+                }
+                .padding(.top, 3.0)
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            Spacer(minLength: 0)
         }
-        .background(.white)
-        .cornerRadius(15)
     }
 }
 
@@ -35,21 +43,33 @@ struct MustDoListView: View {
             NavigationView(title: "MustDo")
                 .frame(height: 40)
             
-            ScrollView {
-                LazyVGrid(
-                    columns: [GridItem(.flexible())],
-                    content: {
-                        ForEach(interactor.mustDoList) {
-                            MustDoCell(mustDo: $0)
-                                .padding(5)
-                        }
-                    })
-                .onAppear {
-                    interactor.loadMustDoList()
+            TodayChangeView(
+                currentDay: $interactor.currentDay,
+                movePrevDay: interactor.movePrevDay,
+                moveNextDay: interactor.moveNextDay
+            )
+            .frame(height: 40)
+            
+            GeometryReader { gp in
+                ScrollView {
+                    LazyVGrid(
+                        columns: [GridItem(.flexible())],
+                        content: {
+                            ForEach(interactor.mustDoList) {
+                                MustDoCell(mustDo: $0)
+                                    .frame(width: gp.size.width - 32)
+                                    .background(.white)
+                                    .cornerRadius(15)
+                                    .padding([.top, .bottom], 5)
+                            }
+                        })
+                    .onAppear {
+                        interactor.loadMustDoList()
+                    }
                 }
+                .padding(.top, 8)
+                .background(Color.init(hex: "F6F6F6"))
             }
-            .padding(.top, 8)
-            .background(Color.init(hex: "F6F6F6"))
         }
     }
 }
