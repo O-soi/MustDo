@@ -17,6 +17,7 @@ struct NavigationView: View {
         HStack {
             Text(title)
                 .font(.custom(fontType.rawValue, size: 18))
+                .modifier(StyledColorModifier(light: .black, dark: .white))
                 .padding()
             
             Spacer()
@@ -25,6 +26,7 @@ struct NavigationView: View {
                 Image("circle_plus")
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .modifier(StyledColorModifier(light: .black, dark: .white))
                     .padding()
                     .onTapGesture {
                         rightButtonTap?()

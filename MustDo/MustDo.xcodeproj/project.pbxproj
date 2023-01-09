@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C1694B94296C4AAF00CFEA40 /* vitro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1694B93296C4AAF00CFEA40 /* vitro.ttf */; };
+		C1694B98296C56EE00CFEA40 /* StyledColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1694B97296C56EE00CFEA40 /* StyledColorModifier.swift */; };
 		C19B367E295F393500419BC0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B367D295F393500419BC0 /* Color+Extension.swift */; };
 		C19B3682295F3AE500419BC0 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B3681295F3AE500419BC0 /* NavigationView.swift */; };
 		C1D9664D2968F69C00C0C554 /* TodayChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9664C2968F69C00C0C554 /* TodayChangeView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		C1694B93296C4AAF00CFEA40 /* vitro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitro.ttf; sourceTree = "<group>"; };
+		C1694B97296C56EE00CFEA40 /* StyledColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledColorModifier.swift; sourceTree = "<group>"; };
 		C19B367D295F393500419BC0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C19B3681295F3AE500419BC0 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		C1D9664C2968F69C00C0C554 /* TodayChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayChangeView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C19B367D295F393500419BC0 /* Color+Extension.swift */,
+				C1694B97296C56EE00CFEA40 /* StyledColorModifier.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -136,7 +139,6 @@
 		C1F7D4F1295A5EEE00522657 /* MustDo */ = {
 			isa = PBXGroup;
 			children = (
-				C1D9665129690E4800C0C554 /* Info.plist */,
 				C1D9664E29690D0F00C0C554 /* CustomFont */,
 				C1F7D51C295A600D00522657 /* App */,
 				C1F7D520295A602E00522657 /* Interactor */,
@@ -145,6 +147,7 @@
 				C1F7D51D295A601300522657 /* View */,
 				C19B367C295F392300419BC0 /* Extension */,
 				C1F7D4F6295A5EEF00522657 /* Assets.xcassets */,
+				C1D9665129690E4800C0C554 /* Info.plist */,
 				C1F7D4F8295A5EEF00522657 /* Preview Content */,
 			);
 			path = MustDo;
@@ -345,6 +348,7 @@
 				C1F7D530295A64DE00522657 /* RemoteAPI.swift in Sources */,
 				C1F7D4F3295A5EEE00522657 /* MustDoApp.swift in Sources */,
 				C19B367E295F393500419BC0 /* Color+Extension.swift in Sources */,
+				C1694B98296C56EE00CFEA40 /* StyledColorModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

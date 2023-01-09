@@ -53,26 +53,34 @@ struct MustDoListView: View {
             )
             .frame(height: 40)
             
-            GeometryReader { gp in
-                ScrollView {
-                    LazyVGrid(
-                        columns: [GridItem(.flexible())],
-                        content: {
-                            ForEach(interactor.mustDoList) {
-                                MustDoCell(mustDo: $0)
-                                    .frame(width: gp.size.width - 32)
-                                    .background(.white)
-                                    .cornerRadius(15)
-                                    .padding([.top, .bottom], 5)
-                            }
-                        })
-                    .onAppear {
-                        interactor.loadMustDoList()
-                    }
+            mustDoList()
+        }
+    }
+}
+
+// MARK: set up LazyVGrid
+
+extension MustDoListView {
+    func mustDoList() -> some View {
+        GeometryReader { gp in
+            ScrollView {
+                LazyVGrid(
+                    columns: [GridItem(.flexible())],
+                    content: {
+                        ForEach(interactor.mustDoList) {
+                            MustDoCell(mustDo: $0)
+                                .frame(width: gp.size.width - 32)
+                                .background(.white)
+                                .cornerRadius(15)
+                                .padding([.top, .bottom], 5)
+                        }
+                    })
+                .onAppear {
+                    interactor.loadMustDoList()
                 }
-                .padding(.top, 8)
-                .background(Color.init(hex: "F6F6F6"))
             }
+            .padding(.top, 8)
+            .background(Color.init(hex: "F6F6F6"))
         }
     }
 }
