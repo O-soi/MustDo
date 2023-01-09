@@ -40,8 +40,11 @@ struct MustDoListView: View {
     
     var body: some View {
         VStack {
-            NavigationView(title: "MustDo")
-                .frame(height: 40)
+            NavigationView(
+                title: "MustDo",
+                rightButtonTap: interactor.routeAddMustDoScene
+            )
+            .frame(height: 40)
             
             TodayChangeView(
                 currentDay: $interactor.currentDay,

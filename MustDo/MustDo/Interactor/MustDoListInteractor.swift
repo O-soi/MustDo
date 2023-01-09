@@ -32,4 +32,8 @@ final class MustDoListInteractor: ObservableObject {
     func moveNextDay() {
         
     }
+    
+    func routeAddMustDoScene() {
+        
+    }
 }

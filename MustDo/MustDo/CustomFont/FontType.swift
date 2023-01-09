@@ -10,4 +10,5 @@ import Foundation
 enum FontType: String {
     case flower = "꽃소금체"
     case watermelonSalad = "EF_watermelonSalad"
+    case vitro = "VITRO INSPIRE TTF"
 }
