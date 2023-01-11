@@ -1,14 +1,14 @@
 //
-//  MustDoTests.swift
-//  MustDoTests
+//  PresenterTests.swift
+//  PresenterTests
 //
 //  Created by tuna.can on 2023/01/11.
 //
 
 import XCTest
-@testable import MustDo
+@testable import Presenter
 
-final class MustDoTests: XCTestCase {
+class PresenterTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
