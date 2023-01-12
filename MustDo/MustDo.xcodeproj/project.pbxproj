@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5100522970276A001806DD /* MustDoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5100512970276A001806DD /* MustDoRepository.swift */; };
+		BF510055297029F0001806DD /* MustDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF510054297029F0001806DD /* MustDoItemView.swift */; };
+		BF51005829702A7D001806DD /* MustDo+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51005729702A7D001806DD /* MustDo+Dummy.swift */; };
+		BF51006529702EED001806DD /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51006429702EED001806DD /* RepositoryFactory.swift */; };
+		BF5100692970301B001806DD /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5100682970301B001806DD /* AppEnvironment.swift */; };
 		BF931E08296ED97100075407 /* MustDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E07296ED97100075407 /* MustDoApp.swift */; };
 		BF931E0C296ED97200075407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF931E0B296ED97200075407 /* Assets.xcassets */; };
 		BF931E0F296ED97200075407 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF931E0E296ED97200075407 /* Preview Assets.xcassets */; };
@@ -18,8 +23,6 @@
 		BF931E4E296EDB3600075407 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E4D296EDB3600075407 /* NavigationView.swift */; };
 		BF931E51296EDB4F00075407 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E50296EDB4F00075407 /* Color+Extensions.swift */; };
 		BF931E53296EDB5900075407 /* StyledColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E52296EDB5900075407 /* StyledColorModifier.swift */; };
-		BF931E5D296EDC3D00075407 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E5C296EDC3C00075407 /* RemoteAPI.swift */; };
-		BF931E5F296EDC4100075407 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E5E296EDC4100075407 /* Repository.swift */; };
 		BF931E68296EDC9B00075407 /* Usecase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E67296EDC9B00075407 /* Usecase.framework */; };
 		BF931E69296EDC9B00075407 /* Usecase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E67296EDC9B00075407 /* Usecase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF931E6C296EDC9F00075407 /* Presenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E6B296EDC9F00075407 /* Presenter.framework */; };
@@ -62,6 +65,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF5100512970276A001806DD /* MustDoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoRepository.swift; sourceTree = "<group>"; };
+		BF510054297029F0001806DD /* MustDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoItemView.swift; sourceTree = "<group>"; };
+		BF51005729702A7D001806DD /* MustDo+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MustDo+Dummy.swift"; sourceTree = "<group>"; };
+		BF51006429702EED001806DD /* RepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
+		BF5100682970301B001806DD /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		BF931E04296ED97100075407 /* MustDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MustDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E07296ED97100075407 /* MustDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoApp.swift; sourceTree = "<group>"; };
 		BF931E0B296ED97200075407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,8 +88,6 @@
 		BF931E56296EDBC900075407 /* Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower.ttf; sourceTree = "<group>"; };
 		BF931E57296EDBC900075407 /* vitro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vitro.ttf; sourceTree = "<group>"; };
 		BF931E58296EDBCA00075407 /* watermelonSalad.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = watermelonSalad.ttf; sourceTree = "<group>"; };
-		BF931E5C296EDC3C00075407 /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
-		BF931E5E296EDC4100075407 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BF931E67296EDC9B00075407 /* Usecase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Usecase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E6B296EDC9F00075407 /* Presenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E6E296EDCA500075407 /* Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF510053297029E1001806DD /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				BF510054297029F0001806DD /* MustDoItemView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		BF51006F29703B93001806DD /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				BF51005729702A7D001806DD /* MustDo+Dummy.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
 		BF931DFB296ED97100075407 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				BF931E07296ED97100075407 /* MustDoApp.swift */,
+				BF5100682970301B001806DD /* AppEnvironment.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -204,8 +227,8 @@
 		BF931E43296EDA6000075407 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				BF931E5E296EDC4100075407 /* Repository.swift */,
-				BF931E60296EDC4400075407 /* Remote */,
+				BF5100512970276A001806DD /* MustDoRepository.swift */,
+				BF51006429702EED001806DD /* RepositoryFactory.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -213,6 +236,7 @@
 		BF931E4B296EDAF600075407 /* MustDoList */ = {
 			isa = PBXGroup;
 			children = (
+				BF510053297029E1001806DD /* Component */,
 				BF931E47296EDAF000075407 /* MustDoListView.swift */,
 				BF931E49296EDAF400075407 /* TodayChangeView.swift */,
 			);
@@ -230,6 +254,7 @@
 		BF931E4F296EDB3F00075407 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BF51006F29703B93001806DD /* Dummy */,
 				BF931E50296EDB4F00075407 /* Color+Extensions.swift */,
 				BF931E52296EDB5900075407 /* StyledColorModifier.swift */,
 			);
@@ -244,14 +269,6 @@
 				BF931E58296EDBCA00075407 /* watermelonSalad.ttf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		BF931E60296EDC4400075407 /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				BF931E5C296EDC3C00075407 /* RemoteAPI.swift */,
-			);
-			path = Remote;
 			sourceTree = "<group>";
 		};
 		BF931E66296EDC9B00075407 /* Frameworks */ = {
@@ -398,9 +415,12 @@
 				BF931E08296ED97100075407 /* MustDoApp.swift in Sources */,
 				BF931E48296EDAF000075407 /* MustDoListView.swift in Sources */,
 				BF931E51296EDB4F00075407 /* Color+Extensions.swift in Sources */,
-				BF931E5F296EDC4100075407 /* Repository.swift in Sources */,
 				BF931E4E296EDB3600075407 /* NavigationView.swift in Sources */,
-				BF931E5D296EDC3D00075407 /* RemoteAPI.swift in Sources */,
+				BF5100692970301B001806DD /* AppEnvironment.swift in Sources */,
+				BF51005829702A7D001806DD /* MustDo+Dummy.swift in Sources */,
+				BF5100522970276A001806DD /* MustDoRepository.swift in Sources */,
+				BF51006529702EED001806DD /* RepositoryFactory.swift in Sources */,
+				BF510055297029F0001806DD /* MustDoItemView.swift in Sources */,
 				BF931E4A296EDAF400075407 /* TodayChangeView.swift in Sources */,
 				BF931E53296EDB5900075407 /* StyledColorModifier.swift in Sources */,
 			);
