@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import Presenter
 
 @main
 struct MustDoApp: App {
+    private let appEnvironment: AppEnvironment
+    
+    init() {
+        self.appEnvironment = AppEnvironment.bootstrap()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MustDoListView()
+            MustDoListView(interactor: appEnvironment.interactorFactory.mustDoList)
         }
     }
 }

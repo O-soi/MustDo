@@ -8,38 +8,14 @@
 import SwiftUI
 import Presenter
 
-struct MustDoCell: View {
-    var mustDo: MustDoCellViewModel
-    var fontType: FontType = .watermelonSalad
+public struct MustDoListView: View {
+    @ObservedObject private var interactor: MustDoListInteractor
     
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(mustDo.discription)
-                    .font(.custom(fontType.rawValue, size: 17))
-                    .fontWeight(.semibold)
-                
-                HStack(spacing: 3) {
-                    Image("timer")
-                        .frame(width: 20, height: 20)
-                    
-                    Text("1시간 30분")
-                        .font(.custom(fontType.rawValue, size: 15))
-                        .fontWeight(.medium)
-                }
-                .padding(.top, 3.0)
-            }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            
-            Spacer(minLength: 0)
-        }
+    public init(interactor: MustDoListInteractor) {
+        self.interactor = interactor
     }
-}
-
-struct MustDoListView: View {
-    @StateObject var interactor = MustDoListInteractor()
     
-    var body: some View {
+    public var body: some View {
         VStack {
             NavigationView(
                 title: "MustDo",
@@ -56,6 +32,9 @@ struct MustDoListView: View {
             
             mustDoList()
         }
+        .onAppear {
+            interactor.viewDidLoad()
+        }
     }
 }
 
@@ -68,17 +47,14 @@ extension MustDoListView {
                 LazyVGrid(
                     columns: [GridItem(.flexible())],
                     content: {
-                        ForEach(interactor.mustDoList) {
-                            MustDoCell(mustDo: $0)
+                        ForEach(interactor.mustDoItems) {
+                            MustDoItemView(mustDo: $0)
                                 .frame(width: gp.size.width - 32)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .padding([.top, .bottom], 5)
                         }
                     })
-                .onAppear {
-                    interactor.loadMustDoList()
-                }
             }
             .padding(.top, 8)
             .background(Color.init(hex: "F6F6F6"))
@@ -86,10 +62,8 @@ extension MustDoListView {
     }
 }
 
-#if DEBUG
 struct MustDoListView_Previews: PreviewProvider {
     static var previews: some View {
-        MustDoListView()
+        MustDoListView(interactor: MustDoListInteractor())
     }
 }
-#endif

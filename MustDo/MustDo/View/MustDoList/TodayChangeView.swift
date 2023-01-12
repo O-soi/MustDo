@@ -40,7 +40,6 @@ struct TodayChangeView: View {
     }
 }
 
-#if DEBUG
 struct TodayChangeView_Previews: PreviewProvider {
     static var previews: some View {
         TodayChangeView(
@@ -50,4 +49,3 @@ struct TodayChangeView_Previews: PreviewProvider {
         )
     }
 }
-#endif
