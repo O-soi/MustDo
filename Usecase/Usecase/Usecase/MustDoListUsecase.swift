@@ -8,9 +8,15 @@
 import Foundation
 
 public final class MustDoListUsecase {
-//    private let repository = Repository()
+    private let repository: MustDoRepositoryProtocol
     
-    public init() {
-        
+    public init(repository: MustDoRepositoryProtocol) {
+        self.repository = repository
+    }
+}
+
+public extension MustDoListUsecase {
+    func loadMustDoItems() -> [MustDo] {
+        repository.mustDoItems()
     }
 }
