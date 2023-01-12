@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF51004E29702509001806DD /* MustDoRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51004D29702509001806DD /* MustDoRepositoryProtocol.swift */; };
+		BF51005E29702C01001806DD /* UsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51005D29702C01001806DD /* UsecaseFactory.swift */; };
+		BF51006329702C5D001806DD /* RepositoryFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51006229702C5D001806DD /* RepositoryFactoryProtocol.swift */; };
 		BF931D1C296ED53300075407 /* Usecase.docc in Sources */ = {isa = PBXBuildFile; fileRef = BF931D1B296ED53300075407 /* Usecase.docc */; };
 		BF931D22296ED53300075407 /* Usecase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931D17296ED53300075407 /* Usecase.framework */; };
 		BF931D27296ED53300075407 /* UsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931D26296ED53300075407 /* UsecaseTests.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF51004D29702509001806DD /* MustDoRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BF51005D29702C01001806DD /* UsecaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseFactory.swift; sourceTree = "<group>"; };
+		BF51006229702C5D001806DD /* RepositoryFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactoryProtocol.swift; sourceTree = "<group>"; };
 		BF931D17296ED53300075407 /* Usecase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Usecase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931D1A296ED53300075407 /* Usecase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Usecase.h; sourceTree = "<group>"; };
 		BF931D1B296ED53300075407 /* Usecase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Usecase.docc; sourceTree = "<group>"; };
@@ -72,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF51004C297024F3001806DD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BF51004D29702509001806DD /* MustDoRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BF51005C29702BF2001806DD /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BF51006229702C5D001806DD /* RepositoryFactoryProtocol.swift */,
+				BF51005D29702C01001806DD /* UsecaseFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		BF931D0D296ED53300075407 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +119,8 @@
 			children = (
 				BF931E3D296ED9F400075407 /* Entity */,
 				BF931E7C296EE0C500075407 /* Usecase */,
+				BF51004C297024F3001806DD /* Repository */,
+				BF51005C29702BF2001806DD /* Factory */,
 				BF931E3A296ED9DE00075407 /* Info */,
 			);
 			path = Usecase;
@@ -252,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF51006329702C5D001806DD /* RepositoryFactoryProtocol.swift in Sources */,
+				BF51005E29702C01001806DD /* UsecaseFactory.swift in Sources */,
 				BF931D1C296ED53300075407 /* Usecase.docc in Sources */,
 				BF931E3C296ED9E800075407 /* MustDoListUsecase.swift in Sources */,
+				BF51004E29702509001806DD /* MustDoRepositoryProtocol.swift in Sources */,
 				BF931E3F296EDA0F00075407 /* MustDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
