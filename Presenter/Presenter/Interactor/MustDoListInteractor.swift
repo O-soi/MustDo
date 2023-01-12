@@ -6,28 +6,24 @@
 //
 
 import Foundation
-import Combine
 import Usecase
 
 public final class MustDoListInteractor: ObservableObject {
-    private let mustDoListUsecase = MustDoListUsecase()
-    
-    @Published public var mustDoList: [MustDoCellViewModel] = []
+    @Published public var mustDoItems: [MustDoItemViewModel] = []
     @Published public var currentDay: String = "23.12.22"
     
-    public init() {}
+    private let usecase: MustDoListUsecase?
+    
+    public init(usecase: MustDoListUsecase? = nil) {
+        self.usecase = usecase
+    }
 }
 
 public extension MustDoListInteractor {
-    func loadMustDoList() {
-        mustDoList = [
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다."),
-            MustDoCellViewModel(repeatDays: [.mon], duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.")
-        ]
+    func viewDidLoad() {
+        guard let usecase else { return }
+        mustDoItems = usecase.loadMustDoItems()
+            .map(MustDoItemViewModel.init(mustDo:))
     }
     
     func movePrevDay() {
