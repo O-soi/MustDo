@@ -14,4 +14,4 @@ jobs:
       
     - name: MustDo Unit Test
       run: |
-        xcodebuild clean test -workspace MustDo/MustDo.xcworkspace -scheme MustDo -destination 'platform=iOS Simulator,name=iPhone 12 pro,OS=latest'
+        xcodebuild clean test -workspace MustDo.xcworkspace -scheme MustDo -destination 'platform=iOS Simulator,name=iPhone 12 pro,OS=latest'
