@@ -16,8 +16,6 @@
 		BF931E0C296ED97200075407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF931E0B296ED97200075407 /* Assets.xcassets */; };
 		BF931E0F296ED97200075407 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF931E0E296ED97200075407 /* Preview Assets.xcassets */; };
 		BF931E1E296ED97200075407 /* MustDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E1D296ED97200075407 /* MustDoTests.swift */; };
-		BF931E28296ED97200075407 /* MustDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E27296ED97200075407 /* MustDoUITests.swift */; };
-		BF931E2A296ED97200075407 /* MustDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E29296ED97200075407 /* MustDoUITestsLaunchTests.swift */; };
 		BF931E48296EDAF000075407 /* MustDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E47296EDAF000075407 /* MustDoListView.swift */; };
 		BF931E4A296EDAF400075407 /* TodayChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E49296EDAF400075407 /* TodayChangeView.swift */; };
 		BF931E4E296EDB3600075407 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E4D296EDB3600075407 /* NavigationView.swift */; };
@@ -33,13 +31,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		BF931E1A296ED97200075407 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF931DFC296ED97100075407 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF931E03296ED97100075407;
-			remoteInfo = MustDo;
-		};
-		BF931E24296ED97200075407 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF931DFC296ED97100075407 /* Project object */;
 			proxyType = 1;
@@ -76,9 +67,6 @@
 		BF931E0E296ED97200075407 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF931E19296ED97200075407 /* MustDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E1D296ED97200075407 /* MustDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTests.swift; sourceTree = "<group>"; };
-		BF931E23296ED97200075407 /* MustDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MustDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF931E27296ED97200075407 /* MustDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoUITests.swift; sourceTree = "<group>"; };
-		BF931E29296ED97200075407 /* MustDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BF931E47296EDAF000075407 /* MustDoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MustDoListView.swift; sourceTree = "<group>"; };
 		BF931E49296EDAF400075407 /* TodayChangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayChangeView.swift; sourceTree = "<group>"; };
 		BF931E4D296EDB3600075407 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
@@ -111,13 +99,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF931E20296ED97200075407 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,7 +123,6 @@
 			children = (
 				BF931E06296ED97100075407 /* MustDo */,
 				BF931E1C296ED97200075407 /* MustDoTests */,
-				BF931E26296ED97200075407 /* MustDoUITests */,
 				BF931E05296ED97100075407 /* Products */,
 				BF931E66296EDC9B00075407 /* Frameworks */,
 			);
@@ -153,7 +133,6 @@
 			children = (
 				BF931E04296ED97100075407 /* MustDo.app */,
 				BF931E19296ED97200075407 /* MustDoTests.xctest */,
-				BF931E23296ED97200075407 /* MustDoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,15 +163,6 @@
 				BF931E1D296ED97200075407 /* MustDoTests.swift */,
 			);
 			path = MustDoTests;
-			sourceTree = "<group>";
-		};
-		BF931E26296ED97200075407 /* MustDoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BF931E27296ED97200075407 /* MustDoUITests.swift */,
-				BF931E29296ED97200075407 /* MustDoUITestsLaunchTests.swift */,
-			);
-			path = MustDoUITests;
 			sourceTree = "<group>";
 		};
 		BF931E40296EDA4300075407 /* View */ = {
@@ -320,24 +290,6 @@
 			productReference = BF931E19296ED97200075407 /* MustDoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BF931E22296ED97200075407 /* MustDoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF931E33296ED97200075407 /* Build configuration list for PBXNativeTarget "MustDoUITests" */;
-			buildPhases = (
-				BF931E1F296ED97200075407 /* Sources */,
-				BF931E20296ED97200075407 /* Frameworks */,
-				BF931E21296ED97200075407 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF931E25296ED97200075407 /* PBXTargetDependency */,
-			);
-			name = MustDoUITests;
-			productName = MustDoUITests;
-			productReference = BF931E23296ED97200075407 /* MustDoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -352,10 +304,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					BF931E18296ED97200075407 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = BF931E03296ED97100075407;
-					};
-					BF931E22296ED97200075407 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = BF931E03296ED97100075407;
 					};
@@ -376,7 +324,6 @@
 			targets = (
 				BF931E03296ED97100075407 /* MustDo */,
 				BF931E18296ED97200075407 /* MustDoTests */,
-				BF931E22296ED97200075407 /* MustDoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,13 +339,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BF931E17296ED97200075407 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF931E21296ED97200075407 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,15 +374,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF931E1F296ED97200075407 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF931E2A296ED97200075407 /* MustDoUITestsLaunchTests.swift in Sources */,
-				BF931E28296ED97200075407 /* MustDoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -450,11 +381,6 @@
 			isa = PBXTargetDependency;
 			target = BF931E03296ED97100075407 /* MustDo */;
 			targetProxy = BF931E1A296ED97200075407 /* PBXContainerItemProxy */;
-		};
-		BF931E25296ED97200075407 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF931E03296ED97100075407 /* MustDo */;
-			targetProxy = BF931E24296ED97200075407 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,7 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = osoi.MustDo.MustDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,7 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = osoi.MustDo.MustDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,40 +606,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MustDo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MustDo";
-			};
-			name = Release;
-		};
-		BF931E34296ED97200075407 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = osoi.MustDo.MustDoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MustDo;
-			};
-			name = Debug;
-		};
-		BF931E35296ED97200075407 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = osoi.MustDo.MustDoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MustDo;
 			};
 			name = Release;
 		};
@@ -743,15 +635,6 @@
 			buildConfigurations = (
 				BF931E31296ED97200075407 /* Debug */,
 				BF931E32296ED97200075407 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF931E33296ED97200075407 /* Build configuration list for PBXNativeTarget "MustDoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF931E34296ED97200075407 /* Debug */,
-				BF931E35296ED97200075407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
