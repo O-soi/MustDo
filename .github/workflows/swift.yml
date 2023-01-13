@@ -11,9 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Pod Install
-      run: |
-        pod install --repo-update --clean-install --project-directory=MustDo/ 
       
     - name: MustDo Unit Test
       run: |
