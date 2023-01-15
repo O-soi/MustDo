@@ -19,6 +19,7 @@
 		BF931E77296EDCC300075407 /* Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E76296EDCC300075407 /* Module.framework */; };
 		BF931E78296EDCC300075407 /* Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E76296EDCC300075407 /* Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF931E7A296EDD9800075407 /* MustDoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E79296EDD9800075407 /* MustDoItemViewModel.swift */; };
+		C1A6DD6C29782C3400E86938 /* ApplicationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6DD6B29782C3400E86938 /* ApplicationInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BF931E72296EDCC100075407 /* Usecase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Usecase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E76296EDCC300075407 /* Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931E79296EDD9800075407 /* MustDoItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoItemViewModel.swift; sourceTree = "<group>"; };
+		C1A6DD6B29782C3400E86938 /* ApplicationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BF931E38296ED9D300075407 /* MustDoListInteractor.swift */,
+				C1A6DD6B29782C3400E86938 /* ApplicationInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				BF931E5B296EDC0C00075407 /* FontType.swift in Sources */,
 				BF931E39296ED9D300075407 /* MustDoListInteractor.swift in Sources */,
 				BF931D64296ED57E00075407 /* Presenter.docc in Sources */,
+				C1A6DD6C29782C3400E86938 /* ApplicationInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

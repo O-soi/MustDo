@@ -7,7 +7,8 @@
 
 import Foundation
 
-public enum RepeatDay {
+@objc
+public enum RepeatDay: Int32 {
     case mon
     case tues
     case wednes
@@ -21,12 +22,15 @@ public struct MustDo: Hashable {
     public var repeatDays: [RepeatDay]
     public var duration: Int
     public var discription: String
-    public var id: String
+    public var id = UUID()
+    public var addedDate: Date
+    public var isCompleted: Bool = false
     
-    public init(repeatDays: [RepeatDay], duration: Int, discription: String, id: String) {
+    public init(repeatDays: [RepeatDay], duration: Int, discription: String, id: UUID = UUID(), addedDate: Date = Date()) {
         self.repeatDays = repeatDays
         self.duration = duration
         self.discription = discription
         self.id = id
+        self.addedDate = Date()
     }
 }

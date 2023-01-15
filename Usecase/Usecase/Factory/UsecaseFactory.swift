@@ -19,4 +19,8 @@ public extension UsecaseFactory {
     func mustDoList() -> MustDoListUsecase {
         MustDoListUsecase(repository: repositoryFactory.mustDo)
     }
+    
+    func application() -> ApplicationUsecase {
+        ApplicationUsecase(repository: repositoryFactory.application)
+    }
 }

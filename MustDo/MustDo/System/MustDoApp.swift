@@ -7,13 +7,17 @@
 
 import SwiftUI
 import Presenter
+import Usecase
 
 @main
 struct MustDoApp: App {
     private let appEnvironment: AppEnvironment
+    private let applicationInteractor: ApplicationInteractor
     
     init() {
         self.appEnvironment = AppEnvironment.bootstrap()
+        self.applicationInteractor = appEnvironment.interactorFactory.application
+        applicationInteractor.initialized()
     }
     
     var body: some Scene {
