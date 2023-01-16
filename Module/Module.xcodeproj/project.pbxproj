@@ -11,6 +11,9 @@
 		BF931D46296ED56700075407 /* Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931D3B296ED56700075407 /* Module.framework */; };
 		BF931D4B296ED56700075407 /* ModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931D4A296ED56700075407 /* ModuleTests.swift */; };
 		BF931D4C296ED56700075407 /* Module.h in Headers */ = {isa = PBXBuildFile; fileRef = BF931D3E296ED56700075407 /* Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFAFF42B2974F2D0005528FA /* CommonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */; };
+		BFAFF42D2974FCA3005528FA /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42C2974FCA3005528FA /* CommonError.swift */; };
+		BFAFF42F2974FD40005528FA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42E2974FD40005528FA /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		BF931D3F296ED56700075407 /* Module.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Module.docc; sourceTree = "<group>"; };
 		BF931D45296ED56700075407 /* ModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF931D4A296ED56700075407 /* ModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTests.swift; sourceTree = "<group>"; };
+		BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPublisher.swift; sourceTree = "<group>"; };
+		BFAFF42C2974FCA3005528FA /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		BFAFF42E2974FD40005528FA /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		BF931D3D296ED56700075407 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				BFAFF4292974F2BE005528FA /* Utility */,
 				BF931E7B296EE0AD00075407 /* Info */,
 			);
 			path = Module;
@@ -91,6 +98,16 @@
 				BF931D3F296ED56700075407 /* Module.docc */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		BFAFF4292974F2BE005528FA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */,
+				BFAFF42C2974FCA3005528FA /* CommonError.swift */,
+				BFAFF42E2974FD40005528FA /* Array+Extensions.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF931D40296ED56700075407 /* Module.docc in Sources */,
+				BFAFF42D2974FCA3005528FA /* CommonError.swift in Sources */,
+				BFAFF42B2974F2D0005528FA /* CommonPublisher.swift in Sources */,
+				BFAFF42F2974FD40005528FA /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +439,7 @@
 		BF931D53296ED56700075407 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -438,6 +459,7 @@
 		BF931D54296ED56700075407 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
