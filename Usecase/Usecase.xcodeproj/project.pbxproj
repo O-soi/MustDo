@@ -18,6 +18,7 @@
 		BF931E3F296EDA0F00075407 /* MustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF931E3E296EDA0F00075407 /* MustDo.swift */; };
 		BF931E63296EDC8D00075407 /* Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E62296EDC8D00075407 /* Module.framework */; };
 		BF931E64296EDC8D00075407 /* Module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF931E62296EDC8D00075407 /* Module.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFAFF4282974F080005528FA /* PagenationUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF4272974F080005528FA /* PagenationUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BF931E3B296ED9E800075407 /* MustDoListUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MustDoListUsecase.swift; sourceTree = "<group>"; };
 		BF931E3E296EDA0F00075407 /* MustDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MustDo.swift; sourceTree = "<group>"; };
 		BF931E62296EDC8D00075407 /* Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAFF4272974F080005528FA /* PagenationUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagenationUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				BF931E3B296ED9E800075407 /* MustDoListUsecase.swift */,
+				BFAFF4272974F080005528FA /* PagenationUsecase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAFF4282974F080005528FA /* PagenationUsecase.swift in Sources */,
 				BF51006329702C5D001806DD /* RepositoryFactoryProtocol.swift in Sources */,
 				BF51005E29702C01001806DD /* UsecaseFactory.swift in Sources */,
 				BF931D1C296ED53300075407 /* Usecase.docc in Sources */,
