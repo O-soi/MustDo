@@ -16,21 +16,30 @@ public struct MustDoListView: View {
     }
     
     public var body: some View {
-        VStack {
-            NavigationView(
-                title: "MustDo",
-                rightButtonTap: interactor.routeAddMustDoScene
-            )
-            .frame(height: 40)
+        ZStack {
+            VStack {
+                NavigationView(
+                    title: "MustDo",
+                    rightButtonTap: interactor.routeAddMustDoScene
+                )
+                .frame(height: 40)
+                
+                TodayChangeView(
+                    currentDay: $interactor.currentDay,
+                    movePrevDay: interactor.movePrevDay,
+                    moveNextDay: interactor.moveNextDay
+                )
+                .frame(height: 40)
+                
+                mustDoList()
+            }
             
-            TodayChangeView(
-                currentDay: $interactor.currentDay,
-                movePrevDay: interactor.movePrevDay,
-                moveNextDay: interactor.moveNextDay
-            )
-            .frame(height: 40)
-            
-            mustDoList()
+            if interactor.isLoading {
+                Color.black.opacity(0.5)
+                    .ignoresSafeArea()
+                    .overlay(ProgressView().progressViewStyle(.circular))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
         }
         .onAppear {
             interactor.viewDidLoad()
@@ -47,12 +56,16 @@ extension MustDoListView {
                 LazyVGrid(
                     columns: [GridItem(.flexible())],
                     content: {
-                        ForEach(interactor.mustDoItems) {
-                            MustDoItemView(mustDo: $0)
+                        ForEach(interactor.items) { item in
+                            MustDoItemView(mustDo: item)
                                 .frame(width: gp.size.width - 32)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .padding([.top, .bottom], 5)
+                                .onAppear {
+                                    guard item == interactor.items.last else { return }
+                                    interactor.scrollToBottom()
+                                }
                         }
                     })
             }

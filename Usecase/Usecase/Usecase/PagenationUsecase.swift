@@ -45,7 +45,7 @@ public struct Page<CursorType, DataModelType> {
     }
 }
 
-public final actor PagenationUsecase<CursorType, DataModelType: Hashable> {
+public final class PagenationUsecase<CursorType, DataModelType: Hashable> {
     public typealias PageModel = Page<CursorType, DataModelType>
     public typealias PageAPI = (PageDirection<CursorType>?) async throws -> PageModel?
     public typealias DataModelType = DataModelType

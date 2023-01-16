@@ -9,7 +9,11 @@ import Foundation
 import Presenter
 
 public extension MustDoItemViewModel {
-    static let dummy = MustDoItemViewModel(duration: 3600, discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.")
+    static var dummy: MustDoItemViewModel {
+        MustDoItemViewModel(duration: 3600,
+                            discription: "이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.이건 테스트용 텍스트 입니다.",
+                            id: UUID().uuidString)
+    }
 }
 
 public extension Array where Element == MustDoItemViewModel {
