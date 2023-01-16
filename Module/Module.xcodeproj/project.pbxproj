@@ -14,6 +14,8 @@
 		BFAFF42B2974F2D0005528FA /* CommonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */; };
 		BFAFF42D2974FCA3005528FA /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42C2974FCA3005528FA /* CommonError.swift */; };
 		BFAFF42F2974FD40005528FA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF42E2974FD40005528FA /* Array+Extensions.swift */; };
+		BFAFF43129750638005528FA /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF43029750638005528FA /* Publisher+Extensions.swift */; };
+		BFAFF43329750DF4005528FA /* CancellableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF43229750DF4005528FA /* CancellableBag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPublisher.swift; sourceTree = "<group>"; };
 		BFAFF42C2974FCA3005528FA /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		BFAFF42E2974FD40005528FA /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BFAFF43029750638005528FA /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		BFAFF43229750DF4005528FA /* CancellableBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableBag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				BFAFF42A2974F2D0005528FA /* CommonPublisher.swift */,
 				BFAFF42C2974FCA3005528FA /* CommonError.swift */,
 				BFAFF42E2974FD40005528FA /* Array+Extensions.swift */,
+				BFAFF43029750638005528FA /* Publisher+Extensions.swift */,
+				BFAFF43229750DF4005528FA /* CancellableBag.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -220,9 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF931D40296ED56700075407 /* Module.docc in Sources */,
+				BFAFF43329750DF4005528FA /* CancellableBag.swift in Sources */,
 				BFAFF42D2974FCA3005528FA /* CommonError.swift in Sources */,
 				BFAFF42B2974F2D0005528FA /* CommonPublisher.swift in Sources */,
 				BFAFF42F2974FD40005528FA /* Array+Extensions.swift in Sources */,
+				BFAFF43129750638005528FA /* Publisher+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

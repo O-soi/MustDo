@@ -17,13 +17,13 @@ public enum RepeatDay {
     case sun
 }
 
-public struct MustDo: Identifiable {
+public struct MustDo: Hashable {
     public var repeatDays: [RepeatDay]
     public var duration: Int
     public var discription: String
-    public var id = UUID()
+    public var id: String
     
-    public init(repeatDays: [RepeatDay], duration: Int, discription: String, id: UUID = UUID()) {
+    public init(repeatDays: [RepeatDay], duration: Int, discription: String, id: String) {
         self.repeatDays = repeatDays
         self.duration = duration
         self.discription = discription

@@ -8,12 +8,12 @@
 import Foundation
 import Usecase
 
-public struct MustDoItemViewModel: Identifiable {
+public struct MustDoItemViewModel: Identifiable, Equatable {
     public var duration: Int
     public var discription: String
-    public var id = UUID()
+    public var id: String
     
-    public init(duration: Int, discription: String, id: UUID = UUID()) {
+    public init(duration: Int, discription: String, id: String) {
         self.duration = duration
         self.discription = discription
         self.id = id

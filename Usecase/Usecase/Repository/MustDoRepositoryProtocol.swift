@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol MustDoRepositoryProtocol {
-    func mustDoItems() -> [MustDo]
+public protocol MustDoRepositoryProtocol: AnyActor {
+    func mustDoItems(page: Int?, limit: Int) async throws -> [MustDo]
 }
