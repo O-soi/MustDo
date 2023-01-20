@@ -2,26 +2,26 @@
 > app description: 꼭 해야할 일을 휴대폰 사용을 강제하여 수행하도록 도와주는 앱
 
 자신이 원하는 목표를 설정할 수 있고, 소요시간을 설정한다. 소요시간을 모두 소모하면 목표가 완료된다.
- 만약, 설정한 소요시간이 소비되는 중에 inactive 상태로 진입할 경우 타이머는 정지되고 벌(?)의 의미로 active상태로 돌아올 때 광고가 표시된다. 
+백그라운드 진입 시, 타이머 노티로 전환되며 완료될 경우 로컬 푸시로 사용자에게 알려준다. (1.0 목표)
 
 조금 재미요소를 추가하자면, 계급같은걸 정해놓고 특정계급에 올라서면 광고가 나와야할 상황에 무시할 수 있는 기회를 제공하고자 한다. 
-
 (계급 예시 - 게으른 범키 → 할건 하는 범키 → 꾸준한 범키 → 성실한 범키)
 
 ## 참여자
 - Developer
     - [Beomkey](https://github.com/beomkey-nkb)
-    - [felix-mr](https://github.com/felix-mr)
-- Reviewer
     - [SeokBA](https://github.com/SeokBA)
+- Viewer
+    - [felix-mr](https://github.com/felix-mr)
 
 ## 프로젝트 목적
-Clean SwiftUI architecture 학습이 주된 목적이고, SwiftUI에 익숙해지기 위함이다. 더 나아가 더 좋은 설계 방식을 모색해볼 수 있다.
+원래는 학습이 목적이었으나, 앱을 운영하고 수익을 내는 것을 목적으로 하고 있다.
 
 ## architecture
-- [Clean SwiftUI](https://nalexn.github.io/clean-architecture-swiftui/)를 기반으로 한다. 프로젝트 생성은 UIKit으로 생성 후, SwiftUI로 진행
-- [Clean SwiftUI Sample Project](https://github.com/nalexn/clean-architecture-swiftui)
-- [Clean SwiftUI Sample Project 분석 Notion](https://lucky-sleet-a6d.notion.site/Clean-SwiftUI-Project-d7740078874c43d6b08c40a2f3498234)
+- MVVM + Clean Architecture 기반이지만 살짝 차이가 있다.
+- Repository - Usecase - Intercator - View 의 레이어로 구성되어있고, ViewModel은 View를 그리기위한 데이터의 단위이다.
+- Repository만 테스트를 위해 protocol로 추상화하여 Usecase를 생성할 때 의존성을 주입하는 방식이다.
+- Usecase, Interactor는 code searching의 편의를 위해 추상화하지 않고 실제 객체를 사용한다.
 
 ## minimum target
 - (X) `13.0`: SwiftUI가 아직 발전 단계이고, 13.0은 SwiftUI가 처음 나왔을 떄의 버전이기 떄문에 버그도 많고 문제가 많다는 의견들이 많았으나 이런 문제점들을 겪으면서 나아가야 성장에 도움이 될 것이라고 판단하여 13.0을 minimum target으로 설정하게 되었다.
@@ -29,14 +29,8 @@ Clean SwiftUI architecture 학습이 주된 목적이고, SwiftUI에 익숙해�
 - (2022.02.04) StateObject 및 async-await를 고려한 아키택처를 설계하기 위해 `15.0`으로 버전을 올림.
 
 ## 기능 목록과 이슈 처리
-기획자가 없기 때문에 개발과 학습을 병행하며 정리할 계획이고, 기능이나 버그에 관련된 내용은 git issue를 적극적으로 활용할 예정이다.
-
-## log 기록
-참여자가 모두 직장인이기도 하고, 야근이라도 하는 날엔 참여 자체를 못하는 날도 많기 때문에 시간을 내는 것이 쉽지 않다. 또한, 학습을 병행하는 프로젝트라서 개발을 하나도 진행하지 못하는 날도 분명 있을 것이라고 생각한다. 
-
-그래서 직접 개발에 기여를 못한 날이더라도, 어떤 부분을 학습했는지 또는 어떤 이유 때문에 참여를 못했는지 간략하게 로그를 작성하는 것을 원칙으로 한다. (SeokBA 제외)
-
-로그 작성은 `main` branch에 작성하는 것을 원칙으로 한다.
+참여자가 전부 개발자다보니.. 따로 관리할 여유는 없을 것이라고 판단한다.
+하지만, 팀원도 소수인원이다보니, 소통이 필요하다면 충분히 화상회의를 통해 해결될 것이라고 생각한다.
 
 ## 개발 기간
 단 기간에 급하게 마무리 지을 생각이 없는 프로젝트이기 때문에 정해진 기간은 없다. 시간이 오래걸리더라도 높은 퀄리티를 만들어내는 것이 목표다.
