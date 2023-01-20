@@ -14,8 +14,7 @@ actor MustDoRepository: MustDoRepositoryProtocol {
         return (0..<limit).map { index in
             MustDo(repeatDays: [.mon],
                    duration: 3600,
-                   discription: "\(page ?? 0)page, \(index)index 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다.",
-                   id: "\(page ?? 0)_\(index)")
+                   discription: "\(page ?? 0)page, \(index)index 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다. 이건 테스트용 텍스트 입니다.")
         }
     }
 }

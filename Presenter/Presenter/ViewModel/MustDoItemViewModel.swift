@@ -24,6 +24,6 @@ public extension MustDoItemViewModel {
     init(mustDo: MustDo) {
         self.duration = mustDo.duration
         self.discription = mustDo.discription
-        self.id = mustDo.id
+        self.id = mustDo.id.uuidString
     }
 }

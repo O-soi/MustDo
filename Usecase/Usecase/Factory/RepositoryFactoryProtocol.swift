@@ -8,5 +8,6 @@
 import Foundation
 
 public protocol RepositoryFactoryProtocol {
+    var application: ApplicationRepositoryProtocol { get }
     var mustDo: MustDoRepositoryProtocol { get }
 }

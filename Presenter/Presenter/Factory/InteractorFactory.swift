@@ -19,6 +19,10 @@ public struct InteractorFactory {
 }
 
 public extension InteractorFactory {
+    var application: ApplicationInteractor {
+        ApplicationInteractor(usecase: usecaseFactory.application())
+    }
+    
     var mustDoList: MustDoListInteractor {
         MustDoListInteractor(usecase: usecaseFactory.mustDoList())
     }

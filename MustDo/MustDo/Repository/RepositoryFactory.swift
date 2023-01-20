@@ -9,6 +9,10 @@ import Foundation
 import Usecase
 
 public struct RepositoryFactory: RepositoryFactoryProtocol {
+    public var application: ApplicationRepositoryProtocol {
+        ApplicationRepository()
+    }
+    
     public var mustDo: MustDoRepositoryProtocol {
         MustDoRepository()
     }
